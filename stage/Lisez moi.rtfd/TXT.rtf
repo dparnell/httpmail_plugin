@@ -1,0 +1,564 @@
+{\rtf1\mac\ansicpg10000\cocoartf102
+{\fonttbl\f0\fswiss\fcharset77 Helvetica-Bold;\f1\fswiss\fcharset77 Helvetica;\f2\fmodern\fcharset77 CourierNewPSMT;
+\f3\fswiss\fcharset77 Helvetica-Oblique;\f4\fnil\fcharset77 Monaco;\f5\fmodern\fcharset77 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue255;}
+\margl1440\margr1440\vieww16460\viewh14720\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+
+\f0\b\fs28 \cf0 Daniel's HttpMail Plugin v1.36
+\f1\b0\fs20 \
+by Daniel Parnell - danielparnell@hotmail.com\
+\
+NDT = Note du traducteur\
+\
+\
+
+\f0\b\fs24 C'est quoi ?\
+
+\f1\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural
+\cf0 Ce logiciel \'8etend l'application Mail standard de MacOS 10.2 ou 10.3 de fa\'8don \'88 r\'8ecup\'8erer vos courriels Hotmail.  Apr\'8fs activation, vous acc\'8ederez \'88 toutes les fonctions de Mail (en particulier au filtre \'88 pourriels si utile).\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+\cf0 \
+
+\f0\b Ce qui fonctionne\
+
+\f1\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural
+\cf0 T\'8el\'8echargement des courriels\
+Effacement\
+R\'8fgles de filtrage des pourriels\
+Synchronisation simple des dossiers  - 
+\f0\b NOUVEAUT\'83\
+
+\f1\b0 S\'8election de l'encodage de transport httpmail - 
+\f0\b NOUVEAUT\'83
+\f1\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+\cf0 \
+
+\f0\b Limitations (ce qui ne fonctionne pas) :\
+
+\f1\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural
+\cf0 Il y a encore des bogues causant des plantages al\'8eatoires\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+\cf0 \
+
+\f0\b Configuration requise :
+\f1\b0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural
+\cf0 Un compte Hotmail ou MSN .\
+MacOS X 10.2.x (Jaguar) ou MacOS X 10.3.x (Panther)\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+
+\f0\b \cf0 T\'8el\'8echargement du logiciel :\
+
+\f1\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural
+\cf0 La version la plus r\'8ecente du logiciel est toujours disponible ici :\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural
+\cf2 http://sourceforge.net/projects/httpmail-plugin/\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+\cf0 \
+\
+
+\f0\b Contact :\
+
+\f1\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural
+\cf0 On peut me contacter (en anglais) \'88 l'adresse \cf2 mailto:danielparnell@hotmail.com
+\fs20 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+
+\f0\b\fs24 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 Comment installer :\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-700\ql\qnatural
+
+\f1\b0 \cf0 Avant l'installation, v\'8erifier que l'application 
+\f0\b Mail
+\f1\b0  n'est pas en train de s'ex\'8ecuter.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li760\fi-20\ql\qnatural
+\cf0 Cette extension doit \'90tre correctement install\'8ee et activ\'8ee pour chaque utilisateur s\'8epar\'8ement.\
+\
+On peut installer l'extension, soit manuellement, soit par en utilisant le programme d'installation.  Jusqu'\'88 la version 1.31 (Panther) le mode d'installation normal \'8etait manuel car l'installeur se t\'8el\'8echargeait \'88 part.  On peut toujours installer manuellement, cependant je recommande l'utilisation du programme d'installation.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-700\ql\qnatural
+\cf0 \
+1. 	Choisir le mode d'installation.  Pour l'installation manuelle aller \'88 l'\'8etape 3, pour le programme d'installation aller \'88 l'\'8etape 2.\
+\
+2.	Double-cliquer sur le programme d'installation 
+\f0\b Installer Panther
+\f1\b0  et presser le bouton 
+\f0\b Install
+\f1\b0 .  L'extension est maintenant install\'8ee.  Aller \'88 l'\'8etape 5.\
+\
+3.	Identifier d'abord le bon dossier dans lequel installer l'extension. Le chemin sera du style :\
+	
+\f0\b Macintosh HD / Utilisateurs / [nom d'utilisateur] / Biblioth\'8fque / Mail / Bundles
+\f1\b0 , mais cela d\'8epend du nom et de l'organisation de votre disque dur (NDT : par exemple 
+\f0\b Utilisateurs
+\f1\b0  peut avoir le nom 
+\f0\b Users
+\f1\b0 ). Double-cliquer sur votre disque dur pour l'ouvrir, puis ouvrir le dossier Utilisateurs. Choisissez le dossier de l'utilisateur courant (votre nom) \'d0 normalement l'ic\'99ne repr\'8esente une maison \'d0 et ouvrez-le. \
+\
+	Chercher le dossier 
+\f0\b Biblioth\'8fque
+\f1\b0  (il peut aussi s'appeler 
+\f0\b Library
+\f1\b0 ), et dans celui-ci le dossier 
+\f0\b Mail
+\f1\b0 .  Si dans ce dossier, il n'y a pas encore pas de dossier 
+\f0\b Bundles
+\f1\b0 , vous devez alors un cr\'8eer un, en s\'8electionnant (dans le Finder) le menu "
+\f0\b Fichier > Nouveau dossier
+\f1\b0 " puis nommer ce dossier 
+\f0\b Bundles
+\f1\b0 . \
+\
+	Copiez le dossier 
+\f0\b httpmail_panther.mailbundle
+\f1\b0  (depuis le volume contenant httpmail_plugin) vers le dossier 
+\f0\b Bundles
+\f1\b0 .\
+\
+4. 	Dans le dossier 
+\f0\b Applications
+\f1\b0 , cherchez le dossier 
+\f0\b Utilitaires
+\f1\b0 . Ouvrez l'application 
+\f0\b Terminal
+\f1\b0 .  Faites un copier-coller des deux lignes ci-dessous vers la fen\'90tre Terminal, puis dans cette m\'90me fen\'90tre taper la touche Retour.  \
+	\
+		
+\f2 defaults write com.apple.mail EnableBundles 1
+\fs20 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi2160\ql\qnatural
+
+\fs24 \cf0 defaults write com.apple.mail BundleCompatibilityVersion 1\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\ql\qnatural
+
+\f1 \cf0 Si vous voyez des messages d'erreur apr\'8fs avoir entr\'8e ces commandes, il vous faut, soit installer le sous-syst\'8fme BSD depuis votre CD d'installation MacOS X, soit utiliser le programme d'installation 
+\f0\b Installer Panther
+\f1\b0 .\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-700\ql\qnatural
+\cf0 \
+5. 	D\'8emarrer Mail. Mail peut se plaindre que l'extension est incompatible ; alors il la d\'8esactive automatiquement.  Si c'est le cas, quittez Mail.  Vous verrez que le dossier \'c7Bundles\'c8 cr\'8e\'8e \'88 l'\'8etape 3 a \'8et\'8e r\'8enomm\'8e \'c7Bundles (Disabled)\'c8.  Renommez-le de nouveau \'c7Bundles\'c8.  Ex\'8ecutez de nouveau les commandes \'c7defaults\'c8 dans Terminal (\'8etape 4) et red\'8emarrez Mail.  Si c'est l'installeur que vous avez utilis\'8e, relancez-le de nouveau.\
+\
+6. 	Dans Mail, ouvrir les pr\'8ef\'8erences.  Appuyer sur le bouton "+" pour cr\'8eer un nouveau compte.  Dans le menu \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\ql\qnatural
+\cf0 Dans le menu 
+\f0\b Type de compte
+\f1\b0 , utiliser la nouvelle option 
+\f0\b httpmail 
+\f1\b0 qui
+\f0\b  
+\f1\b0  appara\'94t.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-700\ql\qnatural
+\cf0 \
+	Cr\'8eer autant de comptes Hotmail que n\'8ecessaire et remplir les options pour chacun des comptes, expliqu\'8ees \'88 l'\'8etape suivante. \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+\cf0 {{\NeXTGraphic Pasted Graphic 1.tiff \width13000 \height10520
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f1\fs24 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-700\ql\qnatural
+\cf0 \
+\
+7.	Remplir les champs 
+\f0\b Description, Adresse \'8electronique
+\f1\b0  et 
+\f0\b Nom complet
+\f1\b0 . Pour un compte Hotmail, mettre 
+\f0\b hotmail.com
+\f1\b0  dans le champ 
+\f0\b Serveur de r\'8eception
+\f1\b0  (NDT : hotmail.fr ne semble pas fonctionner ici).  Pour le nom d'utilisateur utiliser votre login Hotmail (par exemple j'ai mis 
+\f0\b danielparnell
+\f1\b0 , sans @hotmail.com !).   Entrer votre mot de passe Hotmail dans 
+\f0\b Mot de passe
+\f1\b0 .\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\ql\qnatural
+\cf0 Pour les comptes MSN, donner 
+\f0\b msn.com
+\f1\b0  comme 
+\f0\b Serveur de r\'8eception
+\f1\b0 , et votre adresse courriel compl\'90te comme nom d'utilisateur. Par exemple je rentrerai 
+\f0\b xerbert@msn.com
+\f1\b0  comme nom d'utilisateur.  Puis remplir le 
+\f0\b Mot de passe
+\f1\b0 .\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-700\ql\qnatural
+\cf0 \
+\
+8. 	Aller sur le panneau 
+\f0\b Avanc\'8e
+\f1\b0  et v\'8erifier les r\'8eglages.  Un menu vous permet de choisir comment le serveur doit g\'8erer les messages apr\'8fs t\'8el\'8echargement : ne rien faire, signaler comme lus, effacer, ou synchroniser.  Pour choisir entre ces options, pensez que votre bo\'94te aux lettres a une taille limit\'8ee sur le serveur.  (NDT : pour une utilisation en fran\'8dais, choisir un encodage 
+\f0\b Latin1
+\f1\b0 ).\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+\cf0 {{\NeXTGraphic Pasted Graphic 2.tiff \width13000 \height10520
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f1\fs24 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-700\ql\qnatural
+\cf0 9. 	Quand vous avez fini d'entrer tous vos comptes Hotmail / MSN, quittez l'application Mail.\
+\
+10. 	R\'8e-ouvrez l'application Mail et pressez le bouton 
+\f0\b Relever le courrier
+\f1\b0 . Vos messages depuis Hotmail / MSN devraient \'90tre t\'8el\'8echarg\'8es.\
+\
+11. 	Pour installer et activer l'extension httpmail pour un autre utilisateur, fermer votre session et vous identifier sous le nom de l'autre utilisateur. Puis r\'8ep\'8eter les instructions ci-dessus. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\ql\qnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b \cf0 Notes sur la synchronisation\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f1\b0 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li540\fi40\ql\qnatural
+\cf0 La synchronisation est pour l'instant simpliste et \'88 sens unique.  \
+\
+Si vous lisez un message, il sera marqu\'8e lu sur le serveur, et si vous effacez ou d\'8eplacez un message, il sera effac\'8e sur le serveur.  Si vous d\'8eplacez un message vers une autre bo\'94te du m\'90me compte 
+\f3\i il
+\f1\i0  
+\f3\i ne sera pas
+\f1\i0  
+\f3\i d\'8eplac\'8e
+\f1\i0  sur le serveur dans l'\'8etat actuel.  Un message d\'8eplac\'8e vers une bo\'94te httpmail 
+\f3\i ne sera pas
+\f1\i0  
+\f3\i envoy\'8e
+\f1\i0  au serveur.\
+\
+La synchronisation est effectu\'8ee au moment du t\'8el\'8echargement de messages.  Donc, si vous marquez un message comme lu, la marque ne sera mise \'88 jour sur le serveur que la prochaine fois que Mail se connecte au serveur.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\ql\qnatural
+
+\f0\b \cf0 Comment s'en d\'8ebarrasser ?\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\ql\qnatural
+
+\f1\b0 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-700\ql\qnatural
+\cf0 1. 	Pour supprimier cette extension, effacer le dossier 
+\f0\b httpmail_panther.mailbundle
+\f1\b0  dans le dossier Bundles de l'utilisateur actuel.  Le chemin pour y acc\'8eder est du genre : Macintosh HD / Utilisateurs / [votre-nom] / Biblioth\'8fque / Mail / Bundles. Vous devez aussi supprimer chaque dossier http-Mail qui a \'8et\'8e cr\'8e\'8e dans le dossier Bundles\
+\
+2. 	Puis, pour d\'8esactiver l'extension, copier la commande suivante vers la fen\'90tre du Terminal, puis appuyer sur la touche Retour :\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 			
+\f2 defaults write com.apple.mail EnableBundles 0
+\f1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\ql\qnatural
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\ql\qnatural
+
+\f0\b \cf0 Pour mettre \'88 jour depuis une ancienne version 
+\f1\b0 :\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi720\ql\qnatural
+\cf0 1.	V\'8erifiez que Mail n'est pas lanc\'8e.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi720\ql\qnatural
+
+\f0\b \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi720\ql\qnatural
+
+\f1\b0 \cf0 2.	Ex\'8ecuter le programme d'installation.  L'ancienne extension sera remplac\'8ee par la nouvelle.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+	
+\f0\b \'83ventuellement vous pouvez choisir de mettre \'88 jour manuellement :
+\f1\b0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1120\fi-560\ql\qnatural
+\cf0 1.	V\'8erifiez que Mail n'est pas lanc\'8e.\
+\
+2.	Mettre l'ancien r\'8epertoire 
+\f0\b httpmail_panther.mailbundle
+\f1\b0  \'88 la corbeille.  Elle se trouve dans un dossier qui s'appelle quelque chose du genre Macintosh HD / Users / [current user name] / Library / Mail / Bundles.\
+	\
+3.	Puis copier (faire glisser) la nouvelle extension 
+\f0\b httpmail_panther.mailbundle 
+\f1\b0 depuis le volume de t\'8el\'8echargement 
+\f0\b httpmail_plugin
+\f1\b0   vers le dossier Bundles.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li580\fi-20\ql\qnatural
+\cf0 Il n'y a pas \'88 mettre \'88 jour vos bo\'94tes aux lettres.  Si la mise \'88 jour a march\'8e, le panneau 
+\f0\b Avanc\'8e
+\f1\b0  des pr\'8ef\'8erences Comptes refl\'8ftera le nouveau num\'8ero de version.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\ql\qnatural
+\cf0 \
+\
+Note : si vous utilisez un proxy HTTP, il faut avoir r\'8ecemment visit\'8e des sites, de fa\'8don \'88 faire m\'8emoriser votre  nom d'utilisateur et votre mot de passe sur le proxy dans Trousseau d'Acc\'8fs.  Les navigateurs qui r\'8ealisent cette fonction correctement incluent OmniWeb et Safari.  Une autre option est de rentrer les r\'8eglages proxy manuellement : dans Pr\'8ef\'8erences Syst\'8fme, sous 
+\f0\b R\'8eseau, 
+\f1\b0 dans le panneau 
+\f0\b Proxies
+\f1\b0  : assigner le proxy HTTP (par ex. proxy.foo.com) ; quand on vous le demandera, donner votre nom d'utilisateur et votre mot de passe.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b \cf0 Change History:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f1\b0 \cf0 \
+	v1.36 - March 22nd 2004\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 Added code to allow the text encoding of the httpmail transport to be selected.\
+Fixed bugs with web redirections\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+	v1.35 - February 23rd 2004\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 Added simple folder synchronization\
+Added some code that should get rid of the "locked folder" problem\
+Folders with accented characters should no longer cause problems\
+Removed ip addresses from the pictures above because they were confusing some people\
+Added code to allow Panther mail to put it's httpmail folders down the bottom like in Jaguar\
+\
+	To use this type "
+\f2 touch ~/Library/Mail/.httpmailfoldersunderroot
+\f1 " at the Terminal prompt\
+\
+	To turn this off type "
+\f2 rm ~/Library/Mail/.httpmailfoldersunderroot
+\f1 ".\
+\
+The setting only applies to new folders, so any folders already present will stay where they are.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+
+\f0\b \cf0 The plugin has been hosted on sourceforge for one year today\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f1\b0 \cf0 \
+	v1.34 - February 8th 2004\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 Back port to Jaguar\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 	v1.34 - January  30th 2004\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 Added code to show connection errors the same way that standard accounts do\
+Added code to take the account offline if a network connection is not possible\
+Added extra option in account preferences to allow sent messages to be saved on the remote server\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 	v1.33 - January  17th 2004\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 Fixed error "
+\f4\fs20 -[NSCFDictionary setObject:forKey:]: attempt to insert nil key"
+\f1\fs24 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+	v1.32 - December 28th 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 Fixed the problem where Mail would take a while to start\
+Fixed "unknown host" problem on startup\
+Back port to 10.2\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 	v1.31 - December 9th 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 Updated installation instructions to include the BundleCompatibilityVersion setting\
+Added code to notify user of any errors that happen during mail operations\
+Disabled some options not used in the advanced page of the account preferences\
+Changed the installation procedure to use the installer by default\
+Changed the installation procedure to hopefully stop mail disabling the plugin the first time through\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 	v1.30 - October 27th 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 The first version of Panther support\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 	v1.22a - August 16th 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 Put the right files into the disk image.  Whoops!\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 	v1.22 - August 16th 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 Fixed the sending code so that sending to multiple recipients should work now.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 	v1.21 - July 7th 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 Found a workaround for the problem when adding new accounts that would require a restart of Mail.\
+Fixed a few other minor bugs\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 	v1.20 - April 13th 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 Added more code from Mitz Pettel to speed things up some more.\
+External mail boxes should not get reindexed all the time any more.\
+Added code to allow the password to be blank. \
+If the password is left blank it will prompt for the password.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+
+\f0\b \cf0 NOTE: A restart of mail after setting the password may be necessary.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+
+\f1\b0 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 	v1.19 - April 12th 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 Added code to speed up downloads thanks to Mitz Pettel\
+Added an option to stop the plugin downloading the extra httpmail folders\
+Added an option to not check folders outside of the plugins account for downloaded messages\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+	v1.18 - April 10th 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 The folder support code has been changed to only look in the httpmail account and the local account for\
+messages that have already been downloaded.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 	v1.17 - April 6th 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 Reworked the socket code again ;)\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 	v1.16 - April 5th 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 Added code to allow messages to be moved to other folders.  \
+	NOTE: this only works with newly downloaded messages.\
+Reworked the delete code to make sure the messages are deleted even if they didn't come from the Inbox\
+Added Japanese translation provided by Nearc.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 	v1.15 - March 30th 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 Added code to allow the folders stored on the server to be accessed\
+A few bug fixes\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+	v1.14 - March 22nd 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 Fixed the editing of httpmail accounts\
+Added code to produce an error information email when something goes wrong downloading a message\
+Added the installer\
+Fixed bug where empty messages would not download properly if the plugin was set to delete mail on download\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+	v1.13 - March 15th 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 Fixed some nasty memory leaks\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+	v1.12 - March 12th 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 Finally got Mail to use the send code (yay!)\
+Added German translation - thanks Pete Haliard\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+	v1.11 - March 6th 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 Changed offline detection code\
+Changed the proxy code to only use the proxy if it is enabled (whoops)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+	v1.10 - February 27th 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 Changed the proxy code to only send a username and password if challenged\
+Added Dutch translation by Paul B\'87ns\'87gi\
+Changed the extension of the mailboxes to .mbox\
+Added support for @msn.com accounts\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+	v1.9 - February 26th 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 The nil insertion exception should be fixed now\
+The source code has been released at sourceforge.net\
+see \cf2 http://sourceforge.net/projects/httpmail-plugin/ \cf0 for more details\
+\
+This will be the last release to the geocities and mac.com sites.  \
+All further releases will be available through sourceforge.net\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+	v1.8 - February 23rd 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 Added code to the preferences window that allows the httpmail provider URL to be set\
+Added mode information to connect error messages\
+Added code to make rules work properly\
+Junk mail should now be moved to the Junk folder\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+	v1.7 - February 22nd 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1240\ql\qnatural
+\cf0 Found and squished some memory leaks\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 	v1.6 - February 16th 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1200\ql\qnatural
+\cf0 Added Svensk translation - Thanks to Fredrik Olsson\
+Fixed the Traditional-Chinese localization - Thanks to Jerry Lee\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 	v1.5 - February 13th 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\fi1220\ql\qnatural
+\cf0 Added Traditional-Chinese - Thanks to Jerry Lee\
+Bug fixes in the socket handling code\
+Fixed the "
+\f5\fs18 *** -[NSConcreteMutableData subdataWithRange:]: range \{0, 2147483647\} exceeds data length 895
+\fs24 " error\
+
+\f1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1220\fi-1220\ql\qnatural
+\cf0 	v1.4 - February 6th 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1220\ql\qnatural
+\cf0 Made the code ready for localizations\
+Added French translation - Thanks to La Sampoo\
+Changed the error notification code\
+Changed the installation instructions - Thanks to Michael Ghilissen\
+Added code to allow the httpmail plugin to go offline, and to check if there is a internet connection\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1220\fi-1220\ql\qnatural
+\cf0 	v1.3 - February 5th 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1220\ql\qnatural
+\cf0 Hopefully fixed the crash problems some people are having.\
+The  "
+\f5\fs20 *** -[NSURL initWithString:relativeToURL:]: nil string parameter
+\f1\fs24 "
+\f5  
+\f1 errors should be fixed now as well.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1220\fi-1220\ql\qnatural
+\cf0 	v1.2 - February 3rd 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1220\ql\qnatural
+\cf0 Changed the "Mark downloaded messages as read on the server" checkbox to a popup list of options\
+Bug fixes\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1220\fi-1220\ql\qnatural
+\cf0 	v1.1 - February 2nd 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1220\ql\qnatural
+\cf0 Added code to automatically enable an account when it is created\
+Added code to populate the Advanced tab in the account preferences sheet\
+Added the "Mark downloaded messages as read on the server" checkbox	\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1220\fi-1220\ql\qnatural
+\cf0 	v1.0	- February 1st 2003\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1220\ql\qnatural
+\cf0 Initial release\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+}

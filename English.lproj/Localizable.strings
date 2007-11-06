@@ -1,0 +1,41 @@
+/* No comment provided by engineer. */
+"An error ocurred while checking for new mail for '%@'\n%@" = "An error ocurred while checking for new mail for '%@'\n%@";
+
+/* No comment provided by engineer. */
+"An error ocurred while removing deleted mail for '%@'\n%@" = "An error ocurred while removing deleted mail for '%@'\n%@";
+
+/* No comment provided by engineer. */
+"Connecting to '%@'..." = "Connecting to '%@'...";
+
+/* No comment provided by engineer. */
+"Connection Failure" = "Connection Failure";
+
+/* No comment provided by engineer. */
+"Could not connect to '%@'\n%@" = "Could not connect to '%@'\n%@";
+
+/* No comment provided by engineer. */
+"Downloading data for Inbox..." = "Downloading data for Inbox...";
+
+/* No comment provided by engineer. */
+"Fetching message %@" = "Fetching message %@";
+
+/* No comment provided by engineer. */
+"Marking message %@ as read" = "Marking message %@ as read";
+
+/* No comment provided by engineer. */
+"Removing message %@" = "Removing message %@";
+
+/* No comment provided by engineer. */
+"Removing messages from '%@'..." = "Removing messages from '%@'...";
+
+/* No comment provided by engineer. */
+"Please enter the password for '%@'" = "Please enter the password for '%@'";
+
+/* No comment provided by engineer. */
+"HttpMail Plugin update available" = "HttpMail Plugin update available";
+
+/* No comment provided by engineer. */
+"Version %0.2f of is now available from\nhttp://www.automagic-software.com/" = "Version %0.2f of is now available from\nhttp://www.automagic-software.com/";
+
+/* No comment provided by engineer. */
+"Error checking for HttpMail Plugin updates" = "Error checking for HttpMail Plugin updates";

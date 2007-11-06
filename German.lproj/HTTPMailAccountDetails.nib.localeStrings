@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Account Directory:</key>
+	<string>Account-Ordner:</string>
+	<key>All messages and their attachments</key>
+	<string>Alle Nachrichten *mit* Attachments</string>
+	<key>All messages, but omit attachments</key>
+	<string>Alle Nachrichten *ohne* Attachments</string>
+	<key>Box</key>
+	<string>Box</string>
+	<key>By Daniel Parnell
+danielparnell@hotmail.com</key>
+	<string>von Daniel Parnell</string>
+	<key>Choose</key>
+	<string>Auswählen</string>
+	<key>Compact mailboxes automatically</key>
+	<string>Mailbox automatisch komprimieren</string>
+	<key>Daniel's HTTPMail plugin v%@</key>
+	<string>Daniel's HTTPMail plugin v%@</string>
+	<key>Default</key>
+	<string>Standard</string>
+	<key>Delete downloaded messages</key>
+	<string>Heruntergelandene Nachrichten löschen</string>
+	<key>Don't change anything on the server</key>
+	<string>Am Server nichts verändern</string>
+	<key>Don't keep copies of any messages</key>
+	<string>Keine Kopien der Nachrichten behalten</string>
+	<key>Enable this account</key>
+	<string>Diesen Account aktivieren</string>
+	<key>Httpmail URL:</key>
+	<string>Httpmail URL:</string>
+	<key>Include when automatically checking for new mail</key>
+	<string>Beim Empfang von Emails ebenfalls berücksichtigen</string>
+	<key>Keep copies of messages for offline viewing:</key>
+	<string>Behalten von Nachrichten für Offlinebetrachtung:</string>
+	<key>Mark downloaded messages as read</key>
+	<string>Heruntergeladene Nachrichten als gelesen markieren</string>
+	<key>Only messages I've read</key>
+	<string>Nur gelesene Nachrichten</string>
+	<key>OtherViews</key>
+	<string>OtherViews</string>
+	<key>Window</key>
+	<string>Window</string>
+</dict>
+</plist>

@@ -1,0 +1,9 @@
+G'day Josh,
+
+    sorry I've taken so long to reply.  Since the birth of my daughter I've been kind of pre-occupied looking after her :)
+It is taking me a really long time to get through the backlog of emails
+
+What you need to do is delete the outgoing mail server and set the plugin to use the "None" setting.
+The plugin will then create a new outgoing mail server that should be correctly configured.
+
+Daniel

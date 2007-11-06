@@ -1,0 +1,205 @@
+{\rtf1\mac\ansicpg10000\cocoartf102
+{\fonttbl\f0\fswiss\fcharset77 Helvetica-Bold;\f1\fswiss\fcharset77 Helvetica;\f2\fmodern\fcharset77 CourierNewPSMT;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue255;}
+\margl1440\margr1440\vieww12800\viewh11300\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+
+\f0\b\fs28 \cf0 Daniel's HttpMail Plugin v1.12
+\f1\b0\fs20 \
+von Daniel Parnell - danielparnell@hotmail.com\
+\'86bersetzung von Pete Haliard\
+\
+\
+
+\f0\b\fs24 Was ist das?\
+
+\f1\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural
+\cf0 Diese Erweiterung erlaubt dem standard Mail Programm von MacOS X 10.2 direkt Email von Hotmail zu empfangen. So k\'9annen die Vorteile von "Mail" genutzt werden (insbesondere der Spam-Filter ;)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+\cf0 \
+\
+
+\f0\b Was funktioniert?\
+
+\f1\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural
+\cf0 Herunterladen,\
+L\'9aschen  von Nachrichten\
+Spam-Filter\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+\cf0 \
+\
+
+\f0\b Einschr\'8ankungen (was noch nicht funktioniert):\
+
+\f1\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural
+\cf0 Es ist nicht m\'9aglich Email via Hotmail zu versenden (also nur Lesen der Emails ).\
+Eine andere Ordnerzuweisung als die Inbox wird nicht unterst\'9ftzt, so f\'9fhrt das Bewegen \
+einer Nachricht in einen andern Ordner unter Umst\'8anden zu erneutem Herunterladen.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+\cf0 \
+
+\f0\b Voraussetzungen:
+\f1\b0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural
+\cf0 ein Hotmail Konto ;)\
+MacOS X 10.2.3 - das Plugin wurde nicht mit vorherigen Versionen getest ...\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+\cf0 \
+\
+
+\f0\b Herunterladen dieser Software:\
+
+\f1\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural
+\cf0 die aktuellste Version ist immer verf\'9fgbar unter:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural
+\cf2 http://sourceforge.net/projects/httpmail-plugin/\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+\cf0 \
+\
+
+\f0\b Kontakt:\
+
+\f1\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural
+\cf0 Erreichbar unter danielparnell@hotmail.com (nur Englisch)
+\fs20 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+\cf0 \
+
+\f0\b\fs24 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 Installationsanleitung:\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural
+
+\f1\b0 \cf0 Zuerst \'9fberpr\'9ffen, dass "Mail" nicht ge\'9affnet ist ...\
+\
+\
+Das Plugin muss f\'9fr jeden Benutzer korrekt installiert und aktiviert werden\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1120\fi-1120\ql\qnatural
+\cf0 	1.	Zuerst muss der richige Ordner f\'9frs Plugin gew\'8ahlt werden .. Der Verzeichnispfad wird etwa so aussehen: \
+		"Macintosh HD/Benutzer/[aktueller Benutzername]/Library/Mail/Bundles" ( genauer "~/Library/Mail/Bundles")\
+		\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1120\ql\qnatural
+\cf0 d.h \'9affnen des "Library" Ordners im Benutzerordner (H\'8auschen ;)), dann den "Mail" Ordner. Falls noch kein "Bundles" Ordner existiert einen solchen erzeugen und beschriften ... \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1120\ql\qnatural
+\cf0 Nun den "
+\f0\b httpmail.mailbundle" 
+\f1\b0 Ordner (von "httpmail plugin v1.3") in den "Bundles" Ordner kopieren.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1120\fi-1120\ql\qnatural
+\cf0 	2. 	Im "Programm" Order (Pinsel Stift Lineal :)) den Dienstprogramme Ordner \'9affnen und das "Terminal" Programm starten. Im Terminal Fenster folgenden Befehl ausf\'9fhren und "Return" dr\'9fcken:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+			
+\f2 defaults write com.apple.mail EnableBundles 1
+\fs20 \
+\
+		\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1120\ql\qnatural
+
+\f1\fs24 \cf0 verwenden von Kopieren und Einf\'9fgen ist der beste Weg ... (ansonsten ist die richtige Schreibweise ev. ein Problem :)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f2\fs8 \cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1120\fi-1120\ql\qnatural
+
+\f1\fs24 \cf0 	3. 	"Mail" starten und das "Einstellungen" Fenster \'9affnen. Den "Hinzuf\'9fgen" Knopf in der Accounts Ansicht dr\'9fcken. Unter Server-Typ sollte nun ein neuer Eintrag erscheinen: httpmail.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1120\ql\qnatural
+\cf0 Nun so viele Accounts wie gew\'9fnscht hinzuf\'9fgen ;) mit den dazugehe\'9arigen Eingaben ..\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+\cf0 {{\NeXTGraphic hotmail.gif \width9920 \height9320
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f1\fs24 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1120\fi-1120\ql\qnatural
+\cf0 	4. 	Beschreibung, Email-Addresse und Namen entsprechend ausf\'9fllen .. 
+\f0\b hotmail.com
+\f1\b0  f\'9fr den Server-Namen dann den Hotmail Login-Namen in das Benuzernamen Feld ( wie zB 
+\f0\b danielparnell, 
+\f1\b0 ohne das @hotmail.com!) und zum Schluss das dazugh\'9arige Passwort.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1120\fi-1120\ql\qnatural
+\cf0 		MSN Accounts sind ein bisschen verschieden ..  
+\f0\b msn.com
+\f1\b0  f\'9fr den Server-Namen .. f\'9fr den Benutzernamen muss hier die ganze Emailaddresse eingegeben werden ( wie zB  
+\f0\b xerbert@msn.com
+\f1\b0  !)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+\cf0 {{\NeXTGraphic msn.gif \width10000 \height9340
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f1\fs24 \cf0 \
+ \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1120\fi-1120\ql\qnatural
+\cf0 	5. 	Nach der Eingabe der Hotmail Accounts "Mail" beenden.\
+\
+	6. 	"Mail" erneut \'9affnen und den 
+\f0\b Empfangen
+\f1\b0  Knopf dr\'9fcken. Die "Hotmail Emails" sollten nun heruntergeladen werden .. ;)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1120\fi-1120\ql\qnatural
+\cf0 	7. 	Um das httpmail Plugin f\'9fr einen andern Benutzer zu installieren muss man sich zuerst abmelden und sich mit dem entsprechenden Benutzernamen anmelden ... Dann die Schritte 1 bis 6 wiederholen.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b \cf0 Wie l\'9aschen (deinstallieren)?\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f1\b0 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1120\fi-1120\ql\qnatural
+\cf0 	1. 	Um die Erweiterung zu l\'9aschen 
+\f0\b httpmail.mailbundle
+\f1\b0  im "Bundles" Ordner des aktuellen Benutzers l\'9aschen. Der Verzeichnispfad wird etwa so aussehen: \
+		"Macintosh HD/Benutzer/[aktueller Benutzername]/Library/Mail/Bundles" ( genauer "~/Library/Mail/Bundles")\
+		ev. zus\'8atzlich die andern http-Mail Ordner l\'9aschen welche im "Bundles" Ordner f\'9fr die einzelnen Accounts erzeugt wurden. \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1120\ql\qnatural
+\cf0 Dann das Plugin Framework von "Mail" deaktivieren indem folgender Befiehl im Terminal Fenster ausgef\'9fhrt wird .. (verwenden von Kopieren und Einf\'9fgen ist der beste Weg ... (ansonsten ist die richtige Schreibweise ev. ein Problem :)):\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+			
+\f2 defaults write com.apple.mail EnableBundles 0
+\fs20 \
+
+\f1\fs24 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b \cf0 Notiz:
+\f1\b0 \
+Falls die Nachrichten nach dem Empfang als gelesen markiert werden sollen, gibts im  "Erweitert" Tab eine Option\
+\
+Falls man einen HTTP-Proxy verwendet sollte man zuerst eine Webseite besuchen damit der Benutzername/Passwort des Proxyservers im Schl\'9fsselbund gespeichert wird (zB OmniWeb oder Safari).  Alternativ dazu kann die Proxyeinstellung auch manuell hinzugef\'9fgt werden. Dazu im Schl\'9fsselbund ein neuen Eintrag mit dem selben Namen wie der Proxyserver erzeugen (zB proxy.foo.com) mit hinzugeh\'9arigem Benutzernamen und Passwort.\
+\
+\
+
+\f0\b Version\'9fbersicht:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f1\b0 \cf0 \
+	im englischen ReadMe Dokument ..}

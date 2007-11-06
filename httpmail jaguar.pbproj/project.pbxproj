@@ -1,0 +1,3182 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 38;
+	objects = {
+		014CEA410018CDE011CA2923 = {
+			isa = PBXBundleReference;
+			path = httpmail.mailbundle;
+			refType = 3;
+		};
+		014CEA420018CDE011CA2923 = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				OPTIMIZATION_CFLAGS = "-O0";
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		014CEA430018CDE011CA2923 = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+//010
+//011
+//012
+//013
+//014
+//080
+//081
+//082
+//083
+//084
+		089C1669FE841209C02AAC07 = {
+			buildStyles = (
+				014CEA420018CDE011CA2923,
+				014CEA430018CDE011CA2923,
+			);
+			hasScannedForEncodings = 1;
+			isa = PBXProject;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				Dutch,
+				pt,
+				sv,
+				zh_TW,
+			);
+			mainGroup = 089C166AFE841209C02AAC07;
+			projectDirPath = "";
+			targets = (
+				089C1673FE841209C02AAC07,
+				F508386D033FBC6B01140587,
+				F5C2286103554B8901140587,
+				F5A632AD05D60D980114595F,
+				F553CD0E05FAD5BF0180638A,
+				F52AEC03062CAEDE014CF3A9,
+			);
+		};
+		089C166AFE841209C02AAC07 = {
+			children = (
+				F5EC6C9C05D60D4D014F5D5C,
+				F5C222C40342E05D01140587,
+				F5083889033FC53401140587,
+				F508387C033FBD0D01140587,
+				F5083874033FBCAC01140587,
+				F5C2286B03554BAE01140587,
+				F556CB87033BE63E01140587,
+				08FB77AFFE84173DC02AAC07,
+				089C167CFE841241C02AAC07,
+				089C1671FE841209C02AAC07,
+				19C28FB8FE9D52D311CA2CBB,
+			);
+			isa = PBXGroup;
+			name = httpmail;
+			refType = 4;
+		};
+		089C1671FE841209C02AAC07 = {
+			children = (
+				1058C7ACFEA557BF11CA2CBB,
+				1058C7AEFEA557BF11CA2CBB,
+			);
+			isa = PBXGroup;
+			name = "Frameworks and Libraries";
+			refType = 4;
+		};
+		089C1672FE841209C02AAC07 = {
+			isa = PBXFrameworkReference;
+			name = Foundation.framework;
+			path = /System/Library/Frameworks/Foundation.framework;
+			refType = 0;
+		};
+		089C1673FE841209C02AAC07 = {
+			buildPhases = (
+				089C1674FE841209C02AAC07,
+				089C1675FE841209C02AAC07,
+				089C1676FE841209C02AAC07,
+				089C1677FE841209C02AAC07,
+				089C1679FE841209C02AAC07,
+			);
+			buildSettings = {
+				DEBUGGING_SYMBOLS = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = /Users/daniel/Library/Mail/Bundles;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DTARGET_JAGUAR";
+				OTHER_LDFLAGS = "-flat_namespace -undefined suppress";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = httpmail;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+				WRAPPER_EXTENSION = mailbundle;
+			};
+			dependencies = (
+			);
+			isa = PBXBundleTarget;
+			name = httpmail;
+			productInstallPath = /Users/daniel/Library/Mail/Bundles;
+			productName = httpmail;
+			productReference = 014CEA410018CDE011CA2923;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>httpmail</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Daniel's httpmail plugin, Copyright 2002, Daniel Parnell</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Daniel's httpmail plugin</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.0.1d1</string>
+	<key>NSPrincipalClass</key>
+	<string>httpmailBundle</string>
+	<key>OSVersion</key>
+	<string>102</string>
+</dict>
+</plist>
+";
+		};
+		089C1674FE841209C02AAC07 = {
+			buildActionMask = 2147483647;
+			files = (
+				F556CB89033BE64C01140587,
+				F556CB97033BE7E301140587,
+				F556CB9A033BF53801140587,
+				F5083862033C188701140587,
+				F5C222DD034C0C6701140587,
+				F5C222DF034C0C6901140587,
+				F5C222E1034C0C6A01140587,
+				F5C222E3034C0C6C01140587,
+				F5C222E5034C0C7001140587,
+				F5C222E7034C0C7101140587,
+				F5C222EA034C20C001140587,
+				F5C222EE034C210101140587,
+				F5C2241603524CF001140587,
+				F5C2285003539DBA01140587,
+				F5EC6C1605D605AB014F5D5C,
+				F5EC6C1905D605E8014F5D5C,
+				F5EC6C1E05D60603014F5D5C,
+				F5EC6C1F05D60603014F5D5C,
+				F5EC6C2005D60603014F5D5C,
+				F5EC6C2105D60603014F5D5C,
+				F5EC6C2405D60616014F5D5C,
+				F5EC6C2C05D60630014F5D5C,
+				F5EC6C2E05D60630014F5D5C,
+				F5EC6C3005D60630014F5D5C,
+				F5EC6C5305D608E6014F5D5C,
+				65FAC9300706958200A80053,
+				65FAC93F070695D700A80053,
+				65FAC946070695EE00A80053,
+				65D030C50851D17800BB793C,
+				65D030CB0851D1E800BB793C,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089C1675FE841209C02AAC07 = {
+			buildActionMask = 2147483647;
+			files = (
+				089C1680FE841241C02AAC07,
+				F5EC6C3205D60666014F5D5C,
+				F5EC6C3705D60699014F5D5C,
+				F5EC6C3F05D60702014F5D5C,
+				F5EC6C4105D6071C014F5D5C,
+				65FAC9320706958200A80053,
+				65FAC93A070695A600A80053,
+				65D030CF0851D1FF00BB793C,
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089C1676FE841209C02AAC07 = {
+			buildActionMask = 2147483647;
+			files = (
+				F556CB98033BE7E301140587,
+				F5083863033C188701140587,
+				F5C222DE034C0C6801140587,
+				F5C222E0034C0C6A01140587,
+				F5C222E2034C0C6B01140587,
+				F5C222E4034C0C6E01140587,
+				F5C222E6034C0C7101140587,
+				F5C222EB034C20C001140587,
+				F5C222EF034C210101140587,
+				F5C2241703524CF001140587,
+				F5C2285103539DBA01140587,
+				F5EC6C1705D605AB014F5D5C,
+				F5EC6C2505D60616014F5D5C,
+				F5EC6C2D05D60630014F5D5C,
+				F5EC6C2F05D60630014F5D5C,
+				F5EC6C3105D60630014F5D5C,
+				F5EC6C5205D608E6014F5D5C,
+				65FAC9310706958200A80053,
+				65FAC940070695D700A80053,
+				65D030C60851D17800BB793C,
+				65D030CC0851D1E800BB793C,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089C1677FE841209C02AAC07 = {
+			buildActionMask = 2147483647;
+			files = (
+				1058C7AFFEA557BF11CA2CBB,
+				F556CB90033BE66301140587,
+				F556CB9B033BFB8E01140587,
+				F556CB9C033BFB8E01140587,
+				F5EC6C8405D6091D014F5D5C,
+				F5EC6C9405D60954014F5D5C,
+				F5EC6C9B05D60968014F5D5C,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089C1679FE841209C02AAC07 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089C167CFE841241C02AAC07 = {
+			children = (
+				089C167DFE841241C02AAC07,
+				F5EC6C1205D6058E014F5D5C,
+				65FAC92F0706958200A80053,
+				F5EC6C3505D60699014F5D5C,
+				F5EC6C3E05D60702014F5D5C,
+				F5EC6C4005D6071C014F5D5C,
+				F53EDC4305DB93D1016290C9,
+				65FAC939070695A600A80053,
+				65D030CD0851D1FF00BB793C,
+			);
+			isa = PBXGroup;
+			name = Resources;
+			refType = 4;
+		};
+		089C167DFE841241C02AAC07 = {
+			children = (
+				089C167EFE841241C02AAC07,
+				F5EC6C3405D60699014F5D5C,
+				F5EC6C3A05D606DA014F5D5C,
+				F5EC6C4305D60746014F5D5C,
+				F5EC6C4605D6075B014F5D5C,
+				F5EC6C4905D6076F014F5D5C,
+				F5EC6C4C05D60782014F5D5C,
+			);
+			isa = PBXVariantGroup;
+			name = InfoPlist.strings;
+			refType = 4;
+		};
+		089C167EFE841241C02AAC07 = {
+			fileEncoding = 10;
+			isa = PBXFileReference;
+			name = English;
+			path = English.lproj/InfoPlist.strings;
+			refType = 4;
+		};
+		089C167FFE841241C02AAC07 = {
+			isa = PBXFrameworkReference;
+			name = AppKit.framework;
+			path = /System/Library/Frameworks/AppKit.framework;
+			refType = 0;
+		};
+		089C1680FE841241C02AAC07 = {
+			fileRef = 089C167DFE841241C02AAC07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		08FB77AFFE84173DC02AAC07 = {
+			children = (
+				F556CB95033BE7E301140587,
+				F556CB96033BE7E301140587,
+				F5083860033C188701140587,
+				F5083861033C188701140587,
+				F5C222E8034C20C001140587,
+				F5C222E9034C20C001140587,
+				F5C222EC034C210101140587,
+				F5C222ED034C210101140587,
+				F5C2241403524CF001140587,
+				F5C2241503524CF001140587,
+				F5C2284E03539DBA01140587,
+				F5C2284F03539DBA01140587,
+				F5EC6C2605D60630014F5D5C,
+				F5EC6C2705D60630014F5D5C,
+				F5EC6C2805D60630014F5D5C,
+				F5EC6C2905D60630014F5D5C,
+				F5EC6C2A05D60630014F5D5C,
+				F5EC6C2B05D60630014F5D5C,
+				65FAC92D0706958200A80053,
+				65FAC92E0706958200A80053,
+				65FAC93D070695D700A80053,
+				65FAC93E070695D700A80053,
+				65D030C10851D17800BB793C,
+				65D030C20851D17800BB793C,
+				65D030C70851D1E800BB793C,
+				65D030C80851D1E800BB793C,
+			);
+			isa = PBXGroup;
+			name = "Mail plugin code";
+			refType = 4;
+		};
+//080
+//081
+//082
+//083
+//084
+//100
+//101
+//102
+//103
+//104
+		1058C7ACFEA557BF11CA2CBB = {
+			children = (
+				F556CB8A033BE66301140587,
+				1058C7ADFEA557BF11CA2CBB,
+				F5EC6C5405D6091D014F5D5C,
+				F5EC6C8505D60954014F5D5C,
+				F5EC6C9505D60968014F5D5C,
+			);
+			isa = PBXGroup;
+			name = "Linked Frameworks";
+			refType = 4;
+		};
+		1058C7ADFEA557BF11CA2CBB = {
+			isa = PBXFrameworkReference;
+			name = Cocoa.framework;
+			path = /System/Library/Frameworks/Cocoa.framework;
+			refType = 0;
+		};
+		1058C7AEFEA557BF11CA2CBB = {
+			children = (
+				089C1672FE841209C02AAC07,
+				089C167FFE841241C02AAC07,
+			);
+			isa = PBXGroup;
+			name = "Other Frameworks";
+			refType = 4;
+		};
+		1058C7AFFEA557BF11CA2CBB = {
+			fileRef = 1058C7ADFEA557BF11CA2CBB;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+//100
+//101
+//102
+//103
+//104
+//190
+//191
+//192
+//193
+//194
+		19C28FB8FE9D52D311CA2CBB = {
+			children = (
+				014CEA410018CDE011CA2923,
+				F508386E033FBC6B01140587,
+				F5C2286203554B8901140587,
+				F5A632AE05D60D980114595F,
+				F553CD4B05FAD5BF0180638A,
+				F52AEC3F062CAEDE014CF3A9,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+		};
+//190
+//191
+//192
+//193
+//194
+//650
+//651
+//652
+//653
+//654
+		65D030C10851D17800BB793C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = HTTPMailUpdateChecker.h;
+			refType = 4;
+		};
+		65D030C20851D17800BB793C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = HTTPMailUpdateChecker.m;
+			refType = 4;
+		};
+		65D030C30851D17800BB793C = {
+			fileRef = 65D030C10851D17800BB793C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65D030C40851D17800BB793C = {
+			fileRef = 65D030C20851D17800BB793C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65D030C50851D17800BB793C = {
+			fileRef = 65D030C10851D17800BB793C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65D030C60851D17800BB793C = {
+			fileRef = 65D030C20851D17800BB793C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65D030C70851D1E800BB793C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPHTTPMailDebugger.h;
+			refType = 4;
+		};
+		65D030C80851D1E800BB793C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPHTTPMailDebugger.m;
+			refType = 4;
+		};
+		65D030C90851D1E800BB793C = {
+			fileRef = 65D030C70851D1E800BB793C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65D030CA0851D1E800BB793C = {
+			fileRef = 65D030C80851D1E800BB793C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65D030CB0851D1E800BB793C = {
+			fileRef = 65D030C70851D1E800BB793C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65D030CC0851D1E800BB793C = {
+			fileRef = 65D030C80851D1E800BB793C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65D030CD0851D1FF00BB793C = {
+			isa = PBXFileReference;
+			path = HTTPMailDebugWindow.nib;
+			refType = 4;
+		};
+		65D030CE0851D1FF00BB793C = {
+			fileRef = 65D030CD0851D1FF00BB793C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65D030CF0851D1FF00BB793C = {
+			fileRef = 65D030CD0851D1FF00BB793C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65D030D0085267B600BB793C = {
+			fileRef = 65D030CD0851D1FF00BB793C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65D030D1085267C900BB793C = {
+			fileRef = 65D030C20851D17800BB793C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65D030D2085267CA00BB793C = {
+			fileRef = 65D030C10851D17800BB793C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65D030D3085267CB00BB793C = {
+			fileRef = 65D030C70851D1E800BB793C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65D030D4085267CB00BB793C = {
+			fileRef = 65D030C80851D1E800BB793C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65FAC92D0706958200A80053 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPHTTPMailPreferences.h;
+			refType = 4;
+		};
+		65FAC92E0706958200A80053 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPHTTPMailPreferences.m;
+			refType = 4;
+		};
+		65FAC92F0706958200A80053 = {
+			isa = PBXFileReference;
+			path = DPHTTPMailPreferences.nib;
+			refType = 4;
+		};
+		65FAC9300706958200A80053 = {
+			fileRef = 65FAC92D0706958200A80053;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65FAC9310706958200A80053 = {
+			fileRef = 65FAC92E0706958200A80053;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65FAC9320706958200A80053 = {
+			fileRef = 65FAC92F0706958200A80053;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65FAC9330706958200A80053 = {
+			fileRef = 65FAC92D0706958200A80053;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65FAC9340706958200A80053 = {
+			fileRef = 65FAC92E0706958200A80053;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65FAC9350706958200A80053 = {
+			fileRef = 65FAC92F0706958200A80053;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65FAC9360706958200A80053 = {
+			fileRef = 65FAC92D0706958200A80053;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65FAC9370706958200A80053 = {
+			fileRef = 65FAC92E0706958200A80053;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65FAC9380706958200A80053 = {
+			fileRef = 65FAC92F0706958200A80053;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65FAC939070695A600A80053 = {
+			isa = PBXFileReference;
+			path = httpmail.png;
+			refType = 4;
+		};
+		65FAC93A070695A600A80053 = {
+			fileRef = 65FAC939070695A600A80053;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65FAC93B070695A600A80053 = {
+			fileRef = 65FAC939070695A600A80053;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65FAC93C070695A600A80053 = {
+			fileRef = 65FAC939070695A600A80053;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65FAC93D070695D700A80053 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPHTTPMail_Preferences.h;
+			refType = 4;
+		};
+		65FAC93E070695D700A80053 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPHTTPMail_Preferences.m;
+			refType = 4;
+		};
+		65FAC93F070695D700A80053 = {
+			fileRef = 65FAC93D070695D700A80053;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65FAC940070695D700A80053 = {
+			fileRef = 65FAC93E070695D700A80053;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65FAC941070695D700A80053 = {
+			fileRef = 65FAC93D070695D700A80053;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65FAC942070695D700A80053 = {
+			fileRef = 65FAC93E070695D700A80053;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65FAC943070695D700A80053 = {
+			fileRef = 65FAC93D070695D700A80053;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65FAC944070695D700A80053 = {
+			fileRef = 65FAC93E070695D700A80053;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65FAC945070695EE00A80053 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = NSPreferences.h;
+			refType = 4;
+		};
+		65FAC946070695EE00A80053 = {
+			fileRef = 65FAC945070695EE00A80053;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65FAC947070695EE00A80053 = {
+			fileRef = 65FAC945070695EE00A80053;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		65FAC948070695EE00A80053 = {
+			fileRef = 65FAC945070695EE00A80053;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+//650
+//651
+//652
+//653
+//654
+//F50
+//F51
+//F52
+//F53
+//F54
+		F5083860033C188701140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = HTTPMailAccount.h;
+			refType = 4;
+		};
+		F5083861033C188701140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = HTTPMailAccount.m;
+			refType = 4;
+		};
+		F5083862033C188701140587 = {
+			fileRef = F5083860033C188701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5083863033C188701140587 = {
+			fileRef = F5083861033C188701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5083869033FBC6B01140587 = {
+			buildActionMask = 2147483647;
+			files = (
+				F508387F033FBD9701140587,
+				F5083883033FC2B101140587,
+				F508388C034018DD01140587,
+				F50838C80341DAF101140587,
+				F5C222CB0342E0A701140587,
+				F5C222D60347A7D201140587,
+				F5D89BA80356A8450139982C,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F508386A033FBC6B01140587 = {
+			buildActionMask = 2147483647;
+			files = (
+				F5083875033FBCB601140587,
+				F5083880033FBD9701140587,
+				F5083884033FC2B101140587,
+				F508388D034018DD01140587,
+				F50838C90341DAF101140587,
+				F5C222CC0342E0A701140587,
+				F5D89BA70356A8450139982C,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F508386B033FBC6B01140587 = {
+			buildActionMask = 2147483647;
+			files = (
+				F5083888033FC50701140587,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F508386C033FBC6B01140587 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F508386D033FBC6B01140587 = {
+			buildPhases = (
+				F5083869033FBC6B01140587,
+				F508386A033FBC6B01140587,
+				F508386B033FBC6B01140587,
+				F508386C033FBC6B01140587,
+			);
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-lcrypto";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = transport;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+			);
+			isa = PBXToolTarget;
+			name = transport;
+			productInstallPath = /usr/local/bin;
+			productName = transport;
+			productReference = F508386E033FBC6B01140587;
+		};
+		F508386E033FBC6B01140587 = {
+			isa = PBXExecutableFileReference;
+			path = transport;
+			refType = 3;
+		};
+		F5083871033FBC9F01140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = main.m;
+			refType = 4;
+		};
+		F5083874033FBCAC01140587 = {
+			children = (
+				F5083871033FBC9F01140587,
+			);
+			isa = PBXGroup;
+			name = "test code";
+			refType = 4;
+		};
+		F5083875033FBCB601140587 = {
+			fileRef = F5083871033FBC9F01140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F508387C033FBD0D01140587 = {
+			children = (
+				F508387D033FBD9701140587,
+				F508387E033FBD9701140587,
+				F5C222D50347A7D201140587,
+				F5D89B99035598C90139982C,
+				F5D89B9A035598C90139982C,
+			);
+			isa = PBXGroup;
+			name = "httpmail code";
+			refType = 4;
+		};
+		F508387D033FBD9701140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPhttpmail.h;
+			refType = 4;
+		};
+		F508387E033FBD9701140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPhttpmail.m;
+			refType = 4;
+		};
+		F508387F033FBD9701140587 = {
+			fileRef = F508387D033FBD9701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5083880033FBD9701140587 = {
+			fileRef = F508387E033FBD9701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5083881033FC2B101140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPSocket.h;
+			refType = 4;
+		};
+		F5083882033FC2B101140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPSocket.m;
+			refType = 4;
+		};
+		F5083883033FC2B101140587 = {
+			fileRef = F5083881033FC2B101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5083884033FC2B101140587 = {
+			fileRef = F5083882033FC2B101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5083888033FC50701140587 = {
+			fileRef = 089C1672FE841209C02AAC07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5083889033FC53401140587 = {
+			children = (
+				F5083881033FC2B101140587,
+				F5083882033FC2B101140587,
+				F508388A034018DD01140587,
+				F508388B034018DD01140587,
+			);
+			isa = PBXGroup;
+			name = "Socket code";
+			refType = 4;
+		};
+		F508388A034018DD01140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPhttp.h;
+			refType = 4;
+		};
+		F508388B034018DD01140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPhttp.m;
+			refType = 4;
+		};
+		F508388C034018DD01140587 = {
+			fileRef = F508388A034018DD01140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F508388D034018DD01140587 = {
+			fileRef = F508388B034018DD01140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F50838C60341DAF101140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPMD5.h;
+			refType = 4;
+		};
+		F50838C70341DAF101140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPMD5.m;
+			refType = 4;
+		};
+		F50838C80341DAF101140587 = {
+			fileRef = F50838C60341DAF101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F50838C90341DAF101140587 = {
+			fileRef = F50838C70341DAF101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC03062CAEDE014CF3A9 = {
+			buildPhases = (
+				F52AEC04062CAEDE014CF3A9,
+				F52AEC1E062CAEDE014CF3A9,
+				F52AEC24062CAEDE014CF3A9,
+				F52AEC36062CAEDE014CF3A9,
+				F52AEC3E062CAEDE014CF3A9,
+			);
+			buildSettings = {
+				DEBUGGING_SYMBOLS = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = /Users/daniel/Library/Mail/Bundles;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DTARGET_JAGUAR -DDEBUG_HTTP -DDEBUG_HTTP_DATA";
+				OTHER_LDFLAGS = "-flat_namespace -undefined suppress";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = httpmail;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+				WRAPPER_EXTENSION = mailbundle;
+			};
+			dependencies = (
+			);
+			isa = PBXBundleTarget;
+			name = "httpmail HTTP Debug";
+			productInstallPath = /Users/daniel/Library/Mail/Bundles;
+			productName = httpmail;
+			productReference = F52AEC3F062CAEDE014CF3A9;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>httpmail</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Daniel's httpmail plugin, Copyright 2002, Daniel Parnell</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Daniel's httpmail plugin</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.0.1d1</string>
+	<key>NSPrincipalClass</key>
+	<string>httpmailBundle</string>
+	<key>OSVersion</key>
+	<string>102</string>
+</dict>
+</plist>
+";
+		};
+		F52AEC04062CAEDE014CF3A9 = {
+			buildActionMask = 2147483647;
+			files = (
+				F52AEC05062CAEDE014CF3A9,
+				F52AEC06062CAEDE014CF3A9,
+				F52AEC07062CAEDE014CF3A9,
+				F52AEC08062CAEDE014CF3A9,
+				F52AEC09062CAEDE014CF3A9,
+				F52AEC0A062CAEDE014CF3A9,
+				F52AEC0B062CAEDE014CF3A9,
+				F52AEC0C062CAEDE014CF3A9,
+				F52AEC0D062CAEDE014CF3A9,
+				F52AEC0E062CAEDE014CF3A9,
+				F52AEC0F062CAEDE014CF3A9,
+				F52AEC10062CAEDE014CF3A9,
+				F52AEC11062CAEDE014CF3A9,
+				F52AEC12062CAEDE014CF3A9,
+				F52AEC13062CAEDE014CF3A9,
+				F52AEC14062CAEDE014CF3A9,
+				F52AEC15062CAEDE014CF3A9,
+				F52AEC16062CAEDE014CF3A9,
+				F52AEC17062CAEDE014CF3A9,
+				F52AEC18062CAEDE014CF3A9,
+				F52AEC19062CAEDE014CF3A9,
+				F52AEC1A062CAEDE014CF3A9,
+				F52AEC1B062CAEDE014CF3A9,
+				F52AEC1C062CAEDE014CF3A9,
+				F52AEC1D062CAEDE014CF3A9,
+				65FAC9360706958200A80053,
+				65FAC943070695D700A80053,
+				65FAC948070695EE00A80053,
+				65D030D2085267CA00BB793C,
+				65D030D3085267CB00BB793C,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52AEC05062CAEDE014CF3A9 = {
+			fileRef = F556CB88033BE64C01140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC06062CAEDE014CF3A9 = {
+			fileRef = F556CB95033BE7E301140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC07062CAEDE014CF3A9 = {
+			fileRef = F556CB99033BF53801140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC08062CAEDE014CF3A9 = {
+			fileRef = F5083860033C188701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC09062CAEDE014CF3A9 = {
+			fileRef = F5C222D50347A7D201140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC0A062CAEDE014CF3A9 = {
+			fileRef = F508387D033FBD9701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC0B062CAEDE014CF3A9 = {
+			fileRef = F508388A034018DD01140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC0C062CAEDE014CF3A9 = {
+			fileRef = F5083881033FC2B101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC0D062CAEDE014CF3A9 = {
+			fileRef = F50838C60341DAF101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC0E062CAEDE014CF3A9 = {
+			fileRef = F5C222C90342E0A701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC0F062CAEDE014CF3A9 = {
+			fileRef = F5C222E8034C20C001140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC10062CAEDE014CF3A9 = {
+			fileRef = F5C222EC034C210101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC11062CAEDE014CF3A9 = {
+			fileRef = F5C2241403524CF001140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC12062CAEDE014CF3A9 = {
+			fileRef = F5C2284E03539DBA01140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC13062CAEDE014CF3A9 = {
+			fileRef = F5EC6C1405D605AB014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC14062CAEDE014CF3A9 = {
+			fileRef = F5EC6C1805D605E8014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC15062CAEDE014CF3A9 = {
+			fileRef = F5EC6C1A05D60603014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC16062CAEDE014CF3A9 = {
+			fileRef = F5EC6C1B05D60603014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC17062CAEDE014CF3A9 = {
+			fileRef = F5EC6C1C05D60603014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC18062CAEDE014CF3A9 = {
+			fileRef = F5EC6C1D05D60603014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC19062CAEDE014CF3A9 = {
+			fileRef = F5EC6C2205D60616014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC1A062CAEDE014CF3A9 = {
+			fileRef = F5EC6C2605D60630014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC1B062CAEDE014CF3A9 = {
+			fileRef = F5EC6C2805D60630014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC1C062CAEDE014CF3A9 = {
+			fileRef = F5EC6C2A05D60630014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC1D062CAEDE014CF3A9 = {
+			fileRef = F5D89B99035598C90139982C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC1E062CAEDE014CF3A9 = {
+			buildActionMask = 2147483647;
+			files = (
+				F52AEC1F062CAEDE014CF3A9,
+				F52AEC20062CAEDE014CF3A9,
+				F52AEC21062CAEDE014CF3A9,
+				F52AEC22062CAEDE014CF3A9,
+				F52AEC23062CAEDE014CF3A9,
+				65FAC9380706958200A80053,
+				65FAC93C070695A600A80053,
+				65D030D0085267B600BB793C,
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52AEC1F062CAEDE014CF3A9 = {
+			fileRef = 089C167DFE841241C02AAC07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC20062CAEDE014CF3A9 = {
+			fileRef = F5EC6C1205D6058E014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC21062CAEDE014CF3A9 = {
+			fileRef = F5EC6C3505D60699014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC22062CAEDE014CF3A9 = {
+			fileRef = F5EC6C3E05D60702014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC23062CAEDE014CF3A9 = {
+			fileRef = F5EC6C4005D6071C014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC24062CAEDE014CF3A9 = {
+			buildActionMask = 2147483647;
+			files = (
+				F52AEC25062CAEDE014CF3A9,
+				F52AEC26062CAEDE014CF3A9,
+				F52AEC27062CAEDE014CF3A9,
+				F52AEC28062CAEDE014CF3A9,
+				F52AEC29062CAEDE014CF3A9,
+				F52AEC2A062CAEDE014CF3A9,
+				F52AEC2B062CAEDE014CF3A9,
+				F52AEC2C062CAEDE014CF3A9,
+				F52AEC2D062CAEDE014CF3A9,
+				F52AEC2E062CAEDE014CF3A9,
+				F52AEC2F062CAEDE014CF3A9,
+				F52AEC30062CAEDE014CF3A9,
+				F52AEC31062CAEDE014CF3A9,
+				F52AEC32062CAEDE014CF3A9,
+				F52AEC33062CAEDE014CF3A9,
+				F52AEC34062CAEDE014CF3A9,
+				F52AEC35062CAEDE014CF3A9,
+				65FAC9370706958200A80053,
+				65FAC944070695D700A80053,
+				65D030D1085267C900BB793C,
+				65D030D4085267CB00BB793C,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52AEC25062CAEDE014CF3A9 = {
+			fileRef = F556CB96033BE7E301140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC26062CAEDE014CF3A9 = {
+			fileRef = F5083861033C188701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC27062CAEDE014CF3A9 = {
+			fileRef = F508387E033FBD9701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC28062CAEDE014CF3A9 = {
+			fileRef = F508388B034018DD01140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC29062CAEDE014CF3A9 = {
+			fileRef = F5083882033FC2B101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC2A062CAEDE014CF3A9 = {
+			fileRef = F50838C70341DAF101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC2B062CAEDE014CF3A9 = {
+			fileRef = F5C222CA0342E0A701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC2C062CAEDE014CF3A9 = {
+			fileRef = F5C222E9034C20C001140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC2D062CAEDE014CF3A9 = {
+			fileRef = F5C222ED034C210101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC2E062CAEDE014CF3A9 = {
+			fileRef = F5C2241503524CF001140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC2F062CAEDE014CF3A9 = {
+			fileRef = F5C2284F03539DBA01140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC30062CAEDE014CF3A9 = {
+			fileRef = F5EC6C1505D605AB014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC31062CAEDE014CF3A9 = {
+			fileRef = F5EC6C2305D60616014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC32062CAEDE014CF3A9 = {
+			fileRef = F5EC6C2705D60630014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC33062CAEDE014CF3A9 = {
+			fileRef = F5EC6C2905D60630014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC34062CAEDE014CF3A9 = {
+			fileRef = F5EC6C2B05D60630014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC35062CAEDE014CF3A9 = {
+			fileRef = F5D89B9A035598C90139982C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC36062CAEDE014CF3A9 = {
+			buildActionMask = 2147483647;
+			files = (
+				F52AEC37062CAEDE014CF3A9,
+				F52AEC38062CAEDE014CF3A9,
+				F52AEC39062CAEDE014CF3A9,
+				F52AEC3A062CAEDE014CF3A9,
+				F52AEC3B062CAEDE014CF3A9,
+				F52AEC3C062CAEDE014CF3A9,
+				F52AEC3D062CAEDE014CF3A9,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52AEC37062CAEDE014CF3A9 = {
+			fileRef = 1058C7ADFEA557BF11CA2CBB;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC38062CAEDE014CF3A9 = {
+			fileRef = F556CB8A033BE66301140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC39062CAEDE014CF3A9 = {
+			fileRef = 089C167FFE841241C02AAC07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC3A062CAEDE014CF3A9 = {
+			fileRef = 089C1672FE841209C02AAC07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC3B062CAEDE014CF3A9 = {
+			fileRef = F5EC6C5405D6091D014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC3C062CAEDE014CF3A9 = {
+			fileRef = F5EC6C8505D60954014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC3D062CAEDE014CF3A9 = {
+			fileRef = F5EC6C9505D60968014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F52AEC3E062CAEDE014CF3A9 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52AEC3F062CAEDE014CF3A9 = {
+			isa = PBXBundleReference;
+			path = httpmail.mailbundle;
+			refType = 3;
+		};
+		F53EDC4305DB93D1016290C9 = {
+			isa = PBXExecutableFileReference;
+			name = atos;
+			path = /usr/bin/atos;
+			refType = 0;
+		};
+		F553CD0E05FAD5BF0180638A = {
+			buildPhases = (
+				F553CD0F05FAD5BF0180638A,
+				F553CD2905FAD5BF0180638A,
+				F553CD3005FAD5BF0180638A,
+				F553CD4205FAD5BF0180638A,
+				F553CD4A05FAD5BF0180638A,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = /Users/daniel/Library/Mail/Bundles;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DTARGET_JAGUAR -DDETAILED_EXCEPTIONS";
+				OTHER_LDFLAGS = "-flat_namespace -undefined suppress";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = httpmail;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+				WRAPPER_EXTENSION = mailbundle;
+			};
+			dependencies = (
+			);
+			isa = PBXBundleTarget;
+			name = "httpmail debug";
+			productInstallPath = /Users/daniel/Library/Mail/Bundles;
+			productName = httpmail;
+			productReference = F553CD4B05FAD5BF0180638A;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>httpmail</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Daniel's httpmail plugin, Copyright 2002, Daniel Parnell</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Daniel's httpmail plugin</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.0.1d1</string>
+	<key>NSPrincipalClass</key>
+	<string>httpmailBundle</string>
+	<key>OSVersion</key>
+	<string>102</string>
+</dict>
+</plist>
+";
+		};
+		F553CD0F05FAD5BF0180638A = {
+			buildActionMask = 2147483647;
+			files = (
+				F553CD1005FAD5BF0180638A,
+				F553CD1105FAD5BF0180638A,
+				F553CD1205FAD5BF0180638A,
+				F553CD1305FAD5BF0180638A,
+				F553CD1405FAD5BF0180638A,
+				F553CD1505FAD5BF0180638A,
+				F553CD1605FAD5BF0180638A,
+				F553CD1705FAD5BF0180638A,
+				F553CD1805FAD5BF0180638A,
+				F553CD1905FAD5BF0180638A,
+				F553CD1A05FAD5BF0180638A,
+				F553CD1B05FAD5BF0180638A,
+				F553CD1C05FAD5BF0180638A,
+				F553CD1D05FAD5BF0180638A,
+				F553CD1E05FAD5BF0180638A,
+				F553CD1F05FAD5BF0180638A,
+				F553CD2005FAD5BF0180638A,
+				F553CD2105FAD5BF0180638A,
+				F553CD2205FAD5BF0180638A,
+				F553CD2305FAD5BF0180638A,
+				F553CD2405FAD5BF0180638A,
+				F553CD2505FAD5BF0180638A,
+				F553CD2605FAD5BF0180638A,
+				F553CD2705FAD5BF0180638A,
+				F553CD2805FAD5BF0180638A,
+				65FAC9330706958200A80053,
+				65FAC941070695D700A80053,
+				65FAC947070695EE00A80053,
+				65D030C30851D17800BB793C,
+				65D030C90851D1E800BB793C,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F553CD1005FAD5BF0180638A = {
+			fileRef = F556CB88033BE64C01140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD1105FAD5BF0180638A = {
+			fileRef = F556CB95033BE7E301140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD1205FAD5BF0180638A = {
+			fileRef = F556CB99033BF53801140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD1305FAD5BF0180638A = {
+			fileRef = F5083860033C188701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD1405FAD5BF0180638A = {
+			fileRef = F5C222D50347A7D201140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD1505FAD5BF0180638A = {
+			fileRef = F508387D033FBD9701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD1605FAD5BF0180638A = {
+			fileRef = F508388A034018DD01140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD1705FAD5BF0180638A = {
+			fileRef = F5083881033FC2B101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD1805FAD5BF0180638A = {
+			fileRef = F50838C60341DAF101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD1905FAD5BF0180638A = {
+			fileRef = F5C222C90342E0A701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD1A05FAD5BF0180638A = {
+			fileRef = F5C222E8034C20C001140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD1B05FAD5BF0180638A = {
+			fileRef = F5C222EC034C210101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD1C05FAD5BF0180638A = {
+			fileRef = F5C2241403524CF001140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD1D05FAD5BF0180638A = {
+			fileRef = F5C2284E03539DBA01140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD1E05FAD5BF0180638A = {
+			fileRef = F5EC6C1405D605AB014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD1F05FAD5BF0180638A = {
+			fileRef = F5EC6C1805D605E8014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD2005FAD5BF0180638A = {
+			fileRef = F5EC6C1A05D60603014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD2105FAD5BF0180638A = {
+			fileRef = F5EC6C1B05D60603014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD2205FAD5BF0180638A = {
+			fileRef = F5EC6C1C05D60603014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD2305FAD5BF0180638A = {
+			fileRef = F5EC6C1D05D60603014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD2405FAD5BF0180638A = {
+			fileRef = F5EC6C2205D60616014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD2505FAD5BF0180638A = {
+			fileRef = F5EC6C2605D60630014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD2605FAD5BF0180638A = {
+			fileRef = F5EC6C2805D60630014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD2705FAD5BF0180638A = {
+			fileRef = F5EC6C2A05D60630014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD2805FAD5BF0180638A = {
+			fileRef = F5D89B99035598C90139982C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD2905FAD5BF0180638A = {
+			buildActionMask = 2147483647;
+			files = (
+				F553CD2A05FAD5BF0180638A,
+				F553CD2B05FAD5BF0180638A,
+				F553CD2C05FAD5BF0180638A,
+				F553CD2D05FAD5BF0180638A,
+				F553CD2E05FAD5BF0180638A,
+				F553CD2F05FAD5BF0180638A,
+				65FAC9350706958200A80053,
+				65FAC93B070695A600A80053,
+				65D030CE0851D1FF00BB793C,
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F553CD2A05FAD5BF0180638A = {
+			fileRef = 089C167DFE841241C02AAC07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD2B05FAD5BF0180638A = {
+			fileRef = F5EC6C1205D6058E014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD2C05FAD5BF0180638A = {
+			fileRef = F5EC6C3505D60699014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD2D05FAD5BF0180638A = {
+			fileRef = F5EC6C3E05D60702014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD2E05FAD5BF0180638A = {
+			fileRef = F5EC6C4005D6071C014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD2F05FAD5BF0180638A = {
+			fileRef = F53EDC4305DB93D1016290C9;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD3005FAD5BF0180638A = {
+			buildActionMask = 2147483647;
+			files = (
+				F553CD3105FAD5BF0180638A,
+				F553CD3205FAD5BF0180638A,
+				F553CD3305FAD5BF0180638A,
+				F553CD3405FAD5BF0180638A,
+				F553CD3505FAD5BF0180638A,
+				F553CD3605FAD5BF0180638A,
+				F553CD3705FAD5BF0180638A,
+				F553CD3805FAD5BF0180638A,
+				F553CD3905FAD5BF0180638A,
+				F553CD3A05FAD5BF0180638A,
+				F553CD3B05FAD5BF0180638A,
+				F553CD3C05FAD5BF0180638A,
+				F553CD3D05FAD5BF0180638A,
+				F553CD3E05FAD5BF0180638A,
+				F553CD3F05FAD5BF0180638A,
+				F553CD4005FAD5BF0180638A,
+				F553CD4105FAD5BF0180638A,
+				65FAC9340706958200A80053,
+				65FAC942070695D700A80053,
+				65D030C40851D17800BB793C,
+				65D030CA0851D1E800BB793C,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F553CD3105FAD5BF0180638A = {
+			fileRef = F556CB96033BE7E301140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD3205FAD5BF0180638A = {
+			fileRef = F5083861033C188701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD3305FAD5BF0180638A = {
+			fileRef = F508387E033FBD9701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD3405FAD5BF0180638A = {
+			fileRef = F508388B034018DD01140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD3505FAD5BF0180638A = {
+			fileRef = F5083882033FC2B101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD3605FAD5BF0180638A = {
+			fileRef = F50838C70341DAF101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD3705FAD5BF0180638A = {
+			fileRef = F5C222CA0342E0A701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD3805FAD5BF0180638A = {
+			fileRef = F5C222E9034C20C001140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD3905FAD5BF0180638A = {
+			fileRef = F5C222ED034C210101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD3A05FAD5BF0180638A = {
+			fileRef = F5C2241503524CF001140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD3B05FAD5BF0180638A = {
+			fileRef = F5C2284F03539DBA01140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD3C05FAD5BF0180638A = {
+			fileRef = F5EC6C1505D605AB014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD3D05FAD5BF0180638A = {
+			fileRef = F5EC6C2305D60616014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD3E05FAD5BF0180638A = {
+			fileRef = F5EC6C2705D60630014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD3F05FAD5BF0180638A = {
+			fileRef = F5EC6C2905D60630014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD4005FAD5BF0180638A = {
+			fileRef = F5EC6C2B05D60630014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD4105FAD5BF0180638A = {
+			fileRef = F5D89B9A035598C90139982C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD4205FAD5BF0180638A = {
+			buildActionMask = 2147483647;
+			files = (
+				F553CD4305FAD5BF0180638A,
+				F553CD4405FAD5BF0180638A,
+				F553CD4505FAD5BF0180638A,
+				F553CD4605FAD5BF0180638A,
+				F553CD4705FAD5BF0180638A,
+				F553CD4805FAD5BF0180638A,
+				F553CD4905FAD5BF0180638A,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F553CD4305FAD5BF0180638A = {
+			fileRef = 1058C7ADFEA557BF11CA2CBB;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD4405FAD5BF0180638A = {
+			fileRef = F556CB8A033BE66301140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD4505FAD5BF0180638A = {
+			fileRef = 089C167FFE841241C02AAC07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD4605FAD5BF0180638A = {
+			fileRef = 089C1672FE841209C02AAC07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD4705FAD5BF0180638A = {
+			fileRef = F5EC6C5405D6091D014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD4805FAD5BF0180638A = {
+			fileRef = F5EC6C8505D60954014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD4905FAD5BF0180638A = {
+			fileRef = F5EC6C9505D60968014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F553CD4A05FAD5BF0180638A = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F553CD4B05FAD5BF0180638A = {
+			isa = PBXBundleReference;
+			path = httpmail.mailbundle;
+			refType = 3;
+		};
+		F556CB87033BE63E01140587 = {
+			children = (
+				F556CB88033BE64C01140587,
+				F556CB99033BF53801140587,
+				F5EC6C1A05D60603014F5D5C,
+				F5EC6C1B05D60603014F5D5C,
+				F5EC6C1C05D60603014F5D5C,
+				F5EC6C1D05D60603014F5D5C,
+				65FAC945070695EE00A80053,
+			);
+			isa = PBXGroup;
+			name = headers;
+			refType = 4;
+		};
+		F556CB88033BE64C01140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = "mail-api.h";
+			refType = 4;
+		};
+		F556CB89033BE64C01140587 = {
+			fileRef = F556CB88033BE64C01140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F556CB8A033BE66301140587 = {
+			isa = PBXFrameworkReference;
+			name = Message.framework;
+			path = /System/Library/Frameworks/Message.framework;
+			refType = 0;
+		};
+		F556CB90033BE66301140587 = {
+			fileRef = F556CB8A033BE66301140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F556CB95033BE7E301140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = httpmailBundle.h;
+			refType = 4;
+		};
+		F556CB96033BE7E301140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = httpmailBundle.m;
+			refType = 4;
+		};
+		F556CB97033BE7E301140587 = {
+			fileRef = F556CB95033BE7E301140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F556CB98033BE7E301140587 = {
+			fileRef = F556CB96033BE7E301140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F556CB99033BF53801140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = "mail-app.h";
+			refType = 4;
+		};
+		F556CB9A033BF53801140587 = {
+			fileRef = F556CB99033BF53801140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F556CB9B033BFB8E01140587 = {
+			fileRef = 089C167FFE841241C02AAC07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F556CB9C033BFB8E01140587 = {
+			fileRef = 089C1672FE841209C02AAC07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5A632A805D60D980114595F = {
+			buildActionMask = 2147483647;
+			files = (
+				F5A632BF05D60DE50114595F,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A632A905D60D980114595F = {
+			buildActionMask = 2147483647;
+			files = (
+				F5A632BA05D60DD80114595F,
+				F5A632BB05D60DD80114595F,
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A632AA05D60D980114595F = {
+			buildActionMask = 2147483647;
+			files = (
+				F5A632BD05D60DE40114595F,
+				F5A632BE05D60DE40114595F,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A632AB05D60D980114595F = {
+			buildActionMask = 2147483647;
+			files = (
+				F5A632C005D60E2C0114595F,
+				F5A632C105D60E300114595F,
+				F5A632C205D60E300114595F,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A632AC05D60D980114595F = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A632AD05D60D980114595F = {
+			buildPhases = (
+				F5A632A805D60D980114595F,
+				F5A632A905D60D980114595F,
+				F5A632AA05D60D980114595F,
+				F5A632AB05D60D980114595F,
+				F5A632AC05D60D980114595F,
+			);
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Installer;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+				WRAPPER_EXTENSION = app;
+			};
+			dependencies = (
+			);
+			isa = PBXApplicationTarget;
+			name = Installer;
+			productInstallPath = "$(USER_APPS_DIR)";
+			productName = Installer;
+			productReference = F5A632AE05D60D980114595F;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string></string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string></string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string></string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.0.1d1</string>
+	<key>NSMainNibFile</key>
+	<string>InstallerWindow</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+		};
+		F5A632AE05D60D980114595F = {
+			isa = PBXApplicationReference;
+			path = Installer.app;
+			refType = 3;
+		};
+		F5A632B005D60DB80114595F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = InstallerController.h;
+			refType = 4;
+		};
+		F5A632B105D60DB80114595F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = InstallerController.m;
+			refType = 4;
+		};
+		F5A632B205D60DB80114595F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = InstallerMain.m;
+			refType = 4;
+		};
+		F5A632B605D60DD80114595F = {
+			children = (
+				F5A632B705D60DD80114595F,
+			);
+			isa = PBXVariantGroup;
+			name = InstallerWindow.nib;
+			path = "";
+			refType = 4;
+		};
+		F5A632B705D60DD80114595F = {
+			isa = PBXFileReference;
+			name = English;
+			path = InstallerResources/English.lproj/InstallerWindow.nib;
+			refType = 4;
+		};
+		F5A632B805D60DD80114595F = {
+			children = (
+				F5A632B905D60DD80114595F,
+			);
+			isa = PBXVariantGroup;
+			name = Localizable.strings;
+			path = "";
+			refType = 4;
+		};
+		F5A632B905D60DD80114595F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			name = English;
+			path = InstallerResources/English.lproj/Localizable.strings;
+			refType = 4;
+		};
+		F5A632BA05D60DD80114595F = {
+			fileRef = F5A632B605D60DD80114595F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5A632BB05D60DD80114595F = {
+			fileRef = F5A632B805D60DD80114595F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5A632BD05D60DE40114595F = {
+			fileRef = F5A632B205D60DB80114595F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5A632BE05D60DE40114595F = {
+			fileRef = F5A632B105D60DB80114595F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5A632BF05D60DE50114595F = {
+			fileRef = F5A632B005D60DB80114595F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5A632C005D60E2C0114595F = {
+			fileRef = 1058C7ADFEA557BF11CA2CBB;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5A632C105D60E300114595F = {
+			fileRef = 089C167FFE841241C02AAC07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5A632C205D60E300114595F = {
+			fileRef = 089C1672FE841209C02AAC07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C222C40342E05D01140587 = {
+			children = (
+				F5EC6C1405D605AB014F5D5C,
+				F5EC6C1505D605AB014F5D5C,
+				F5C222C90342E0A701140587,
+				F5C222CA0342E0A701140587,
+				F50838C60341DAF101140587,
+				F50838C70341DAF101140587,
+				F5EC6C1805D605E8014F5D5C,
+				F5EC6C2205D60616014F5D5C,
+				F5EC6C2305D60616014F5D5C,
+			);
+			isa = PBXGroup;
+			name = "misc code";
+			refType = 4;
+		};
+		F5C222C90342E0A701140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPStringUtils.h;
+			refType = 4;
+		};
+		F5C222CA0342E0A701140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPStringUtils.m;
+			refType = 4;
+		};
+		F5C222CB0342E0A701140587 = {
+			fileRef = F5C222C90342E0A701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C222CC0342E0A701140587 = {
+			fileRef = F5C222CA0342E0A701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C222D50347A7D201140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = httpmail_constants.h;
+			refType = 4;
+		};
+		F5C222D60347A7D201140587 = {
+			fileRef = F5C222D50347A7D201140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C222DD034C0C6701140587 = {
+			fileRef = F5C222D50347A7D201140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C222DE034C0C6801140587 = {
+			fileRef = F508387E033FBD9701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C222DF034C0C6901140587 = {
+			fileRef = F508387D033FBD9701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C222E0034C0C6A01140587 = {
+			fileRef = F508388B034018DD01140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C222E1034C0C6A01140587 = {
+			fileRef = F508388A034018DD01140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C222E2034C0C6B01140587 = {
+			fileRef = F5083882033FC2B101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C222E3034C0C6C01140587 = {
+			fileRef = F5083881033FC2B101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C222E4034C0C6E01140587 = {
+			fileRef = F50838C70341DAF101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C222E5034C0C7001140587 = {
+			fileRef = F50838C60341DAF101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C222E6034C0C7101140587 = {
+			fileRef = F5C222CA0342E0A701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C222E7034C0C7101140587 = {
+			fileRef = F5C222C90342E0A701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C222E8034C20C001140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = HTTPMailConnection.h;
+			refType = 4;
+		};
+		F5C222E9034C20C001140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = HTTPMailConnection.m;
+			refType = 4;
+		};
+		F5C222EA034C20C001140587 = {
+			fileRef = F5C222E8034C20C001140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C222EB034C20C001140587 = {
+			fileRef = F5C222E9034C20C001140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C222EC034C210101140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = HTTPMailStore.h;
+			refType = 4;
+		};
+		F5C222ED034C210101140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = HTTPMailStore.m;
+			refType = 4;
+		};
+		F5C222EE034C210101140587 = {
+			fileRef = F5C222EC034C210101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C222EF034C210101140587 = {
+			fileRef = F5C222ED034C210101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C2241403524CF001140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = HTTPMailMessage.h;
+			refType = 4;
+		};
+		F5C2241503524CF001140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = HTTPMailMessage.m;
+			refType = 4;
+		};
+		F5C2241603524CF001140587 = {
+			fileRef = F5C2241403524CF001140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C2241703524CF001140587 = {
+			fileRef = F5C2241503524CF001140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C2284E03539DBA01140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = HTTPMailAccountDetails.h;
+			refType = 4;
+		};
+		F5C2284F03539DBA01140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = HTTPMailAccountDetails.m;
+			refType = 4;
+		};
+		F5C2285003539DBA01140587 = {
+			fileRef = F5C2284E03539DBA01140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C2285103539DBA01140587 = {
+			fileRef = F5C2284F03539DBA01140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C2285D03554B8901140587 = {
+			buildActionMask = 2147483647;
+			files = (
+				F5C2286403554B9701140587,
+				F5C2286603554B9901140587,
+				F5C2286803554B9D01140587,
+				F5C2286A03554BA001140587,
+				F5C2287603554C3E01140587,
+				F5C2287903554CD301140587,
+				F5C2287C03554CD501140587,
+				F5C2288003555A0201140587,
+				F5D89B9B035598C90139982C,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C2285E03554B8901140587 = {
+			buildActionMask = 2147483647;
+			files = (
+				F5C2286503554B9801140587,
+				F5C2286703554B9A01140587,
+				F5C2286903554B9E01140587,
+				F5C2287003554BE601140587,
+				F5C2287503554C3E01140587,
+				F5C2287A03554CD301140587,
+				F5C2287D03554CD601140587,
+				F5C2288103555A0201140587,
+				F5D89B9C035598C90139982C,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C2285F03554B8901140587 = {
+			buildActionMask = 2147483647;
+			files = (
+				F5C2287703554C4F01140587,
+				F5C2287803554C5001140587,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C2286003554B8901140587 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C2286103554B8901140587 = {
+			buildPhases = (
+				F5C2285D03554B8901140587,
+				F5C2285E03554B8901140587,
+				F5C2285F03554B8901140587,
+				F5C2286003554B8901140587,
+			);
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-lcrypto";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = POP;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+			);
+			isa = PBXToolTarget;
+			name = POP;
+			productInstallPath = /usr/local/bin;
+			productName = POP;
+			productReference = F5C2286203554B8901140587;
+		};
+		F5C2286203554B8901140587 = {
+			isa = PBXExecutableFileReference;
+			path = POP;
+			refType = 3;
+		};
+		F5C2286403554B9701140587 = {
+			fileRef = F5083881033FC2B101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C2286503554B9801140587 = {
+			fileRef = F5083882033FC2B101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C2286603554B9901140587 = {
+			fileRef = F508388A034018DD01140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C2286703554B9A01140587 = {
+			fileRef = F508388B034018DD01140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C2286803554B9D01140587 = {
+			fileRef = F508387D033FBD9701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C2286903554B9E01140587 = {
+			fileRef = F508387E033FBD9701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C2286A03554BA001140587 = {
+			fileRef = F5C222D50347A7D201140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C2286B03554BAE01140587 = {
+			children = (
+				F5C2286D03554BD501140587,
+				F5C2287103554C2201140587,
+				F5C2287203554C2201140587,
+				F5C2287E03555A0201140587,
+				F5C2287F03555A0201140587,
+			);
+			isa = PBXGroup;
+			name = "POP Server";
+			refType = 4;
+		};
+		F5C2286D03554BD501140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = POPMain.m;
+			refType = 4;
+		};
+		F5C2287003554BE601140587 = {
+			fileRef = F5C2286D03554BD501140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C2287103554C2201140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPPOPServer.h;
+			refType = 4;
+		};
+		F5C2287203554C2201140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPPOPServer.m;
+			refType = 4;
+		};
+		F5C2287503554C3E01140587 = {
+			fileRef = F5C2287203554C2201140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C2287603554C3E01140587 = {
+			fileRef = F5C2287103554C2201140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C2287703554C4F01140587 = {
+			fileRef = 089C1672FE841209C02AAC07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C2287803554C5001140587 = {
+			fileRef = 089C167FFE841241C02AAC07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C2287903554CD301140587 = {
+			fileRef = F5C222C90342E0A701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C2287A03554CD301140587 = {
+			fileRef = F5C222CA0342E0A701140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C2287C03554CD501140587 = {
+			fileRef = F50838C60341DAF101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C2287D03554CD601140587 = {
+			fileRef = F50838C70341DAF101140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C2287E03555A0201140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPPOPHandler.h;
+			refType = 4;
+		};
+		F5C2287F03555A0201140587 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPPOPHandler.m;
+			refType = 4;
+		};
+		F5C2288003555A0201140587 = {
+			fileRef = F5C2287E03555A0201140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5C2288103555A0201140587 = {
+			fileRef = F5C2287F03555A0201140587;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5D89B99035598C90139982C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPhttpmailMessage.h;
+			refType = 4;
+		};
+		F5D89B9A035598C90139982C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPhttpmailMessage.m;
+			refType = 4;
+		};
+		F5D89B9B035598C90139982C = {
+			fileRef = F5D89B99035598C90139982C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5D89B9C035598C90139982C = {
+			fileRef = F5D89B9A035598C90139982C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5D89BA70356A8450139982C = {
+			fileRef = F5D89B9A035598C90139982C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5D89BA80356A8450139982C = {
+			fileRef = F5D89B99035598C90139982C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C1205D6058E014F5D5C = {
+			children = (
+				F5EC6C1305D6058E014F5D5C,
+				F5EC6C3305D60683014F5D5C,
+				F5EC6C3905D606DA014F5D5C,
+				F5EC6C3C05D606F0014F5D5C,
+				F5EC6C4205D60746014F5D5C,
+				F5EC6C4505D6075B014F5D5C,
+				F5EC6C4805D6076F014F5D5C,
+				F5EC6C4B05D60782014F5D5C,
+			);
+			isa = PBXVariantGroup;
+			name = HTTPMailAccountDetails.nib;
+			path = "";
+			refType = 4;
+		};
+		F5EC6C1305D6058E014F5D5C = {
+			isa = PBXFileReference;
+			name = English;
+			path = English.lproj/HTTPMailAccountDetails.nib;
+			refType = 4;
+		};
+		F5EC6C1405D605AB014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPKeychain.h;
+			refType = 4;
+		};
+		F5EC6C1505D605AB014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = DPKeychain.m;
+			refType = 4;
+		};
+		F5EC6C1605D605AB014F5D5C = {
+			fileRef = F5EC6C1405D605AB014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C1705D605AB014F5D5C = {
+			fileRef = F5EC6C1505D605AB014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C1805D605E8014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = Version.h;
+			refType = 4;
+		};
+		F5EC6C1905D605E8014F5D5C = {
+			fileRef = F5EC6C1805D605E8014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C1A05D60603014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = "mail-api-10.2.h";
+			refType = 4;
+		};
+		F5EC6C1B05D60603014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = "mail-api-10.3.h";
+			refType = 4;
+		};
+		F5EC6C1C05D60603014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = "mail-app-10.2.h";
+			refType = 4;
+		};
+		F5EC6C1D05D60603014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = "mail-app-10.3.h";
+			refType = 4;
+		};
+		F5EC6C1E05D60603014F5D5C = {
+			fileRef = F5EC6C1A05D60603014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C1F05D60603014F5D5C = {
+			fileRef = F5EC6C1B05D60603014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C2005D60603014F5D5C = {
+			fileRef = F5EC6C1C05D60603014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C2105D60603014F5D5C = {
+			fileRef = F5EC6C1D05D60603014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C2205D60616014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = Localization.h;
+			refType = 4;
+		};
+		F5EC6C2305D60616014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = Localization.m;
+			refType = 4;
+		};
+		F5EC6C2405D60616014F5D5C = {
+			fileRef = F5EC6C2205D60616014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C2505D60616014F5D5C = {
+			fileRef = F5EC6C2305D60616014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C2605D60630014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = HTTPMailDelivery.h;
+			refType = 4;
+		};
+		F5EC6C2705D60630014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = HTTPMailDelivery.m;
+			refType = 4;
+		};
+		F5EC6C2805D60630014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = HTTPMailDeliveryAccount.h;
+			refType = 4;
+		};
+		F5EC6C2905D60630014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = HTTPMailDeliveryAccount.m;
+			refType = 4;
+		};
+		F5EC6C2A05D60630014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = HTTPMailDeliveryQueue.h;
+			refType = 4;
+		};
+		F5EC6C2B05D60630014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = HTTPMailDeliveryQueue.m;
+			refType = 4;
+		};
+		F5EC6C2C05D60630014F5D5C = {
+			fileRef = F5EC6C2605D60630014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C2D05D60630014F5D5C = {
+			fileRef = F5EC6C2705D60630014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C2E05D60630014F5D5C = {
+			fileRef = F5EC6C2805D60630014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C2F05D60630014F5D5C = {
+			fileRef = F5EC6C2905D60630014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C3005D60630014F5D5C = {
+			fileRef = F5EC6C2A05D60630014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C3105D60630014F5D5C = {
+			fileRef = F5EC6C2B05D60630014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C3205D60666014F5D5C = {
+			fileRef = F5EC6C1205D6058E014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C3305D60683014F5D5C = {
+			isa = PBXFileReference;
+			name = Dutch;
+			path = Dutch.lproj/HTTPMailAccountDetails.nib;
+			refType = 4;
+		};
+		F5EC6C3405D60699014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			name = Dutch;
+			path = Dutch.lproj/InfoPlist.strings;
+			refType = 4;
+		};
+		F5EC6C3505D60699014F5D5C = {
+			children = (
+				F5EC6C3805D606B4014F5D5C,
+				F5EC6C3605D60699014F5D5C,
+				F5EC6C3B05D606DA014F5D5C,
+				F5EC6C3D05D606F0014F5D5C,
+				F5EC6C4405D60746014F5D5C,
+				F5EC6C4705D6075B014F5D5C,
+				F5EC6C4A05D6076F014F5D5C,
+				F5EC6C4D05D60782014F5D5C,
+			);
+			isa = PBXVariantGroup;
+			name = Localizable.strings;
+			path = "";
+			refType = 4;
+		};
+		F5EC6C3605D60699014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			name = Dutch;
+			path = Dutch.lproj/Localizable.strings;
+			refType = 4;
+		};
+		F5EC6C3705D60699014F5D5C = {
+			fileRef = F5EC6C3505D60699014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C3805D606B4014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			name = English;
+			path = English.lproj/Localizable.strings;
+			refType = 4;
+		};
+		F5EC6C3905D606DA014F5D5C = {
+			isa = PBXFileReference;
+			name = French;
+			path = French.lproj/HTTPMailAccountDetails.nib;
+			refType = 4;
+		};
+		F5EC6C3A05D606DA014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			name = French;
+			path = French.lproj/InfoPlist.strings;
+			refType = 4;
+		};
+		F5EC6C3B05D606DA014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			name = French;
+			path = French.lproj/Localizable.strings;
+			refType = 4;
+		};
+		F5EC6C3C05D606F0014F5D5C = {
+			isa = PBXFileReference;
+			name = German;
+			path = German.lproj/HTTPMailAccountDetails.nib;
+			refType = 4;
+		};
+		F5EC6C3D05D606F0014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			name = German;
+			path = German.lproj/Localizable.strings;
+			refType = 4;
+		};
+		F5EC6C3E05D60702014F5D5C = {
+			isa = PBXFileReference;
+			path = icon.icns;
+			refType = 4;
+		};
+		F5EC6C3F05D60702014F5D5C = {
+			fileRef = F5EC6C3E05D60702014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C4005D6071C014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = Info.plist;
+			refType = 4;
+		};
+		F5EC6C4105D6071C014F5D5C = {
+			fileRef = F5EC6C4005D6071C014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C4205D60746014F5D5C = {
+			isa = PBXFileReference;
+			name = Japanese;
+			path = Japanese.lproj/HTTPMailAccountDetails.nib;
+			refType = 4;
+		};
+		F5EC6C4305D60746014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			name = Japanese;
+			path = Japanese.lproj/InfoPlist.strings;
+			refType = 4;
+		};
+		F5EC6C4405D60746014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			name = Japanese;
+			path = Japanese.lproj/Localizable.strings;
+			refType = 4;
+		};
+		F5EC6C4505D6075B014F5D5C = {
+			isa = PBXFileReference;
+			name = pt;
+			path = pt.lproj/HTTPMailAccountDetails.nib;
+			refType = 4;
+		};
+		F5EC6C4605D6075B014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			name = pt;
+			path = pt.lproj/InfoPlist.strings;
+			refType = 4;
+		};
+		F5EC6C4705D6075B014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			name = pt;
+			path = pt.lproj/Localizable.strings;
+			refType = 4;
+		};
+		F5EC6C4805D6076F014F5D5C = {
+			isa = PBXFileReference;
+			name = sv;
+			path = sv.lproj/HTTPMailAccountDetails.nib;
+			refType = 4;
+		};
+		F5EC6C4905D6076F014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			name = sv;
+			path = sv.lproj/InfoPlist.strings;
+			refType = 4;
+		};
+		F5EC6C4A05D6076F014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			name = sv;
+			path = sv.lproj/Localizable.strings;
+			refType = 4;
+		};
+		F5EC6C4B05D60782014F5D5C = {
+			isa = PBXFileReference;
+			name = zh_TW;
+			path = zh_TW.lproj/HTTPMailAccountDetails.nib;
+			refType = 4;
+		};
+		F5EC6C4C05D60782014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			name = zh_TW;
+			path = zh_TW.lproj/InfoPlist.strings;
+			refType = 4;
+		};
+		F5EC6C4D05D60782014F5D5C = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			name = zh_TW;
+			path = zh_TW.lproj/Localizable.strings;
+			refType = 4;
+		};
+		F5EC6C5205D608E6014F5D5C = {
+			fileRef = F5D89B9A035598C90139982C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C5305D608E6014F5D5C = {
+			fileRef = F5D89B99035598C90139982C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C5405D6091D014F5D5C = {
+			isa = PBXFrameworkReference;
+			name = Security.framework;
+			path = /System/Library/Frameworks/Security.framework;
+			refType = 0;
+		};
+		F5EC6C8405D6091D014F5D5C = {
+			fileRef = F5EC6C5405D6091D014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C8505D60954014F5D5C = {
+			isa = PBXFrameworkReference;
+			name = SystemConfiguration.framework;
+			path = /System/Library/Frameworks/SystemConfiguration.framework;
+			refType = 0;
+		};
+		F5EC6C9405D60954014F5D5C = {
+			fileRef = F5EC6C8505D60954014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C9505D60968014F5D5C = {
+			isa = PBXFrameworkReference;
+			name = ExceptionHandling.framework;
+			path = /System/Library/Frameworks/ExceptionHandling.framework;
+			refType = 0;
+		};
+		F5EC6C9B05D60968014F5D5C = {
+			fileRef = F5EC6C9505D60968014F5D5C;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5EC6C9C05D60D4D014F5D5C = {
+			children = (
+				F5A632B005D60DB80114595F,
+				F5A632B105D60DB80114595F,
+				F5A632B205D60DB80114595F,
+				F5EC6C9D05D60D63014F5D5C,
+			);
+			isa = PBXGroup;
+			name = Installer;
+			refType = 4;
+		};
+		F5EC6C9D05D60D63014F5D5C = {
+			children = (
+				F5A632B605D60DD80114595F,
+				F5A632B805D60DD80114595F,
+			);
+			isa = PBXGroup;
+			name = Resources;
+			refType = 4;
+		};
+	};
+	rootObject = 089C1669FE841209C02AAC07;
+}

@@ -1,0 +1,30 @@
+/* No comment provided by engineer. */
+"An error ocurred while checking for new mail for '%@'\n%@" = "於檢查 '%@'\n%@ 上新郵件時發生錯誤";
+
+/* No comment provided by engineer. */
+"An error ocurred while removing deleted mail for '%@'\n%@" = "於移除 '%@'\n%@ 上已刪除郵件時發生錯誤";
+
+/* No comment provided by engineer. */
+"Connecting to '%@'..." = "連線至 '%@' 中...";
+
+/* No comment provided by engineer. */
+"Connection Failure" = "連線失敗";
+
+/* No comment provided by engineer. */
+"Could not connect to '%@'\n%@" = "無法連線至 '%@'\n%@";
+
+/* No comment provided by engineer. */
+"Downloading data for Inbox..." = "下載資料至收件匣中...";
+
+/* No comment provided by engineer. */
+"Fetching message %@" = "取得郵件 %@ 中";
+
+/* No comment provided by engineer. */
+"Marking message %@ as read" = "標示郵件 %@ 為已閱讀中";
+
+/* No comment provided by engineer. */
+"Removing message %@ as read" = "移除郵件 %@ 為已閱讀中";
+
+/* No comment provided by engineer. */
+"Removing messages from '%@'..." = "自 '%@' 移除郵件中...";
+

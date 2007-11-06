@@ -1,0 +1,9 @@
+G'day Gautam,
+
+    sorry I've taken so long to reply.  Since the birth of my daughter I've been kind of pre-occupied looking after her :)
+It is taking me a really long time to get through the backlog of emails
+
+The incoming mail server information isn't actually used by the plugin.
+The outgoing mail server should be set to the "None" setting and the plugin will then automatically create a correctly configured outgoing mail server for you.
+
+Daniel

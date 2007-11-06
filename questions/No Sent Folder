@@ -1,0 +1,11 @@
+G'day Kathriel,
+
+    sorry I've taken so long to reply.  Since the birth of my daughter I've been kind of pre-occupied looking after her :)
+It is taking me a really long time to get through the backlog of emails
+
+You should make sure that the "Store sent messages on the server" option is off on the "Mailbox Behaviors" tab of the account preferences.
+
+If you are running Tiger, then you may also need to create another non-httpmail account in Mail, say POP or IMAP to force Mail to create the Sent Items folder properly.
+
+Daniel
+

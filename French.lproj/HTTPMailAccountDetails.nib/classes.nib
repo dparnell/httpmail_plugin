@@ -1,0 +1,45 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                authenticationChanged = id; 
+                moveToTrashClicked = id; 
+                openAccountPathDialog = id; 
+                sslChanged = id; 
+            }; 
+            CLASS = AccountDetails; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_authenticationPopup" = NSPopUpButton; 
+                "_autoFetch" = NSButton; 
+                "_chooseDirectoryButton" = NSButton; 
+                "_detailView" = NSView; 
+                "_directory" = NSTextField; 
+                "_enableAccountCheckbox" = NSButton; 
+                "_portNumberField" = NSTextField; 
+                "_sentMessagesAgePopup" = NSPopUpButton; 
+                "_sslSwitch" = NSButton; 
+                "_trashAgePopup" = NSPopUpButton; 
+                "_trashCheckbox" = NSButton; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {restoreDefaultURL = id; }; 
+            CLASS = HTTPMailAccountDetails; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_checkLocalAccounts" = NSButton; 
+                "_downloadExtraFolders" = NSButton; 
+                "_downloadOptions" = NSPopUpButton; 
+                "_providerURL" = NSTextField; 
+                "_saveSent" = NSButton; 
+                "_transportEncoding" = NSPopUpButton; 
+                "_versionLabel" = NSTextField; 
+            }; 
+            SUPERCLASS = AccountDetails; 
+        }
+    ); 
+    IBVersion = 1; 
+}

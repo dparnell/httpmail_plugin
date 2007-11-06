@@ -1,0 +1,30 @@
+/* No comment provided by engineer. */
+"An error ocurred while checking for new mail for '%@'\n%@" = "Er is een fout opgetreden terwijl er gezocht werd naar nieuwe mail voor '%@'\n%@";
+
+/* No comment provided by engineer. */
+"An error ocurred while removing deleted mail for '%@'\n%@" = "Er is een fout opgetreden terwijl ge-delete mail werd verwijderd voor '%@'\n%@";
+
+/* No comment provided by engineer. */
+"Connecting to '%@'..." = "Verbinden met '%@'...";
+
+/* No comment provided by engineer. */
+"Connection Failure" = "Verbindingsfout";
+
+/* No comment provided by engineer. */
+"Could not connect to '%@'\n%@" = "Kon geen verbinding krijgen met '%@'\n%@";
+
+/* No comment provided by engineer. */
+"Downloading data for Inbox..." = "Gegevens worden opgehaald van Inbox...";
+
+/* No comment provided by engineer. */
+"Fetching message %@" = "Ophalen bericht %@";
+
+/* No comment provided by engineer. */
+"Marking message %@ as read" = "Bericht %@ wordt gemarkeerd als gelezen";
+
+/* No comment provided by engineer. */
+"Removing message %@" = "Verwijderen van bericht %@";
+
+/* No comment provided by engineer. */
+"Removing messages from '%@'..." = "Bericht wordt verwijderd van '%@'...";
+

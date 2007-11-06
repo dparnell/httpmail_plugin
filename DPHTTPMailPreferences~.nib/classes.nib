@@ -1,0 +1,26 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {checkForUpdates = id; startDebugger = id; }; 
+            CLASS = DPHTTPMailPreferences; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                createDetailedErrors = NSButton; 
+                failureMessages = NSButton; 
+                foldersUnderInbox = NSButton; 
+                getSentItems = NSButton; 
+                ignoreNetworkState = NSButton; 
+                preferencesView = NSBox; 
+                timeout = NSSlider; 
+                updates = NSButton; 
+                userAgent = NSComboBox; 
+                versionLabel = NSTextField; 
+            }; 
+            SUPERCLASS = NSPreferencesModule; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = NSPreferences; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = NSPreferencesModule; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,20 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {startInstall = id; }; 
+            CLASS = InstallerController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                bundlesField = NSTextField; 
+                doneButton = id; 
+                enablingField = NSTextField; 
+                installingField = NSTextField; 
+                panel = NSPanel; 
+                progress = NSProgressIndicator; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

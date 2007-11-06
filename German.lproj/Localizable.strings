@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>An error ocurred while checking for new mail for '%@'
+%@</key>
+	<string>Ein Fehler ist aufgetreten beim abrufen der Nachrichten für '%@'\n%@</string>
+	<key>An error ocurred while removing deleted mail for '%@'
+%@</key>
+	<string>Ein Fehler ist aufgetreten beim löschen der Nachrichten von '%@'\n%@</string>
+	<key>Connecting to '%@'...</key>
+	<string>Verbinden mit '%@'...</string>
+	<key>Connection Failure</key>
+	<string>Verbindungsfehler</string>
+	<key>Could not connect to '%@'
+%@</key>
+	<string>Keine Verbindung möglich mit '%@'\n%@</string>
+	<key>Downloading data for Inbox...</key>
+	<string>Daten herunterladen für Eingang...</string>
+	<key>Fetching message %@</key>
+	<string>Herunterladen der Nachricht %@</string>
+	<key>Marking message %@ as read</key>
+	<string>Nachricht %@ als gelesen markieren</string>
+	<key>Removing message %@</key>
+	<string>Lösche Nachricht %@</string>
+	<key>Removing messages from '%@'...</key>
+	<string>Nachrichten löschen von '%@'...</string>
+</dict>
+</plist>

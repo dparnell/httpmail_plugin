@@ -1,0 +1,32 @@
+/* No comment provided by engineer. */
+"An error ocurred while checking for new mail for '%@'\n%@" = "Ett fel uppstod vid kontroll av ny e-post för '%@'\n%@";
+
+/* No comment provided by engineer. */
+"An error ocurred while removing deleted mail for '%@'\n%@" = "Ett fel uppstod vid radering av borttagen e-post för '%@'\n%@";
+
+/* No comment provided by engineer. */
+"Connecting to '%@'..." = "Ansluter till '%@'...";
+
+/* No comment provided by engineer. */
+"Connection Failure" = "Anslutningsfel";
+
+/* No comment provided by engineer. */
+"Could not connect to '%@'\n%@" = "Kunde inte ansluta till '%@'\n%@";
+
+/* No comment provided by engineer. */
+"Downloading data for Inbox..." = "Laddar ned data för Inbox...";
+
+/* No comment provided by engineer. */
+"Fetching message %@" = "Hämtar e-post %@";
+
+/* No comment provided by engineer. */
+"Marking message %@ as read" = "Markerar e-post %@ som läst";
+
+/* No comment provided by engineer. */
+"Removing message %@" = "Tar bort e-post %@";
+
+/* No comment provided by engineer. */
+"Removing messages from '%@'..." = "Tar bort e-post från '%@'...";
+
+/* No comment provided by engineer. */
+"Please enter the password for '%@'" = "Var god ange lösenfras för '%@'";

@@ -1,0 +1,12 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {performTests = id; performTests2 = id; testMail = id; }; 
+            CLASS = AsyncTester; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}
