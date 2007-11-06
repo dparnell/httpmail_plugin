@@ -1064,7 +1064,6 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
                     messagesInBox = [[s copyOfAllMessages] autorelease];
 //NSLog(@"here 17");
                     messageCount = [messagesInBox count];
-					[monitor setItemsTotal: messageCount];
                     for ( j = 0; j<messageCount; j++ )
                     {
 #ifdef DESCEND_FROM_IMAP_ACCOUNT
@@ -1077,7 +1076,10 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
 							
 							if(UIDHeader) {
 								[monitor setStatusMessage: [NSString stringWithFormat: LocalizedString(@"Updating message %d of %d '%@'", @""), j+1, messageCount, [libMsg subject]]];
-								[monitor setItemsDone: j];
+								[monitor setItemMinValue: 0];
+								[monitor setItemMaxValue: messageCount];
+								[monitor setItemValue: j];
+								[monitor updateDoneValue];
 //								NSLog(@"setting remote ID to: %@", UIDHeader);
 								[libMsg setRemoteID: UIDHeader];
 								[libMsg commit];
