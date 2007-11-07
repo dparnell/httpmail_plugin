@@ -1411,7 +1411,7 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
 }
 
 - (void) setTransportEncoding:(NSStringEncoding)encoding {
-    NSMutableDictionary* dict = [self accountInfo];
+    NSMutableDictionary* dict = [[self accountInfo] mutableCopy];
     [dict setObject: [NSNumber numberWithInt: encoding] forKey: @"transportEncoding"];
     [self setAccountInfo: dict];
 }
@@ -1427,7 +1427,7 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
 }
 
 - (void) setShouldMarkAsReadOnDownload:(BOOL)flag {
-    NSMutableDictionary* dict = [self accountInfo];
+    NSMutableDictionary* dict = [[self accountInfo] mutableCopy];
     [dict setObject: [NSNumber numberWithInt: flag] forKey: @"markAsReadOnDownload"];
     [self setAccountInfo: dict];
 }
@@ -1443,7 +1443,7 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
 }
 
 - (void) setShouldDeleteOnDownload:(BOOL)flag {
-    NSMutableDictionary* dict = [self accountInfo];
+    NSMutableDictionary* dict = [[self accountInfo] mutableCopy];
     [dict setObject: [NSNumber numberWithInt: flag] forKey: @"deleteOnDownload"];
     [self setAccountInfo: dict];
 }
@@ -1459,7 +1459,7 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
 }
 
 - (void) setShouldSaveSentMessages: (BOOL)flag {
-    NSMutableDictionary* dict = [self accountInfo];
+    NSMutableDictionary* dict = [[self accountInfo] mutableCopy];
     [dict setObject: [NSNumber numberWithInt: flag] forKey: @"saveSentMessages"];
     [self setAccountInfo: dict];
 }
@@ -1476,7 +1476,7 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
 }
 
 - (void) setProviderURL:(NSString*)url {
-    NSMutableDictionary* dict = [self accountInfo];
+    NSMutableDictionary* dict = [[self accountInfo] mutableCopy];
     [dict setObject: url forKey: @"providerURL"];
     [self setAccountInfo: dict];
 }
@@ -1492,7 +1492,7 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
 }
 
 - (void) setShouldCheckLocalAccounts: (BOOL)flag {
-    NSMutableDictionary* dict = [self accountInfo];
+    NSMutableDictionary* dict = [[self accountInfo] mutableCopy];
     [dict setObject: [NSNumber numberWithInt: flag] forKey: @"checkLocalAccounts"];
     [self setAccountInfo: dict];
 }
@@ -1508,7 +1508,7 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
 }
 
 - (void) setShouldDownloadExtraFolders: (BOOL)flag {
-    NSMutableDictionary* dict = [self accountInfo];
+    NSMutableDictionary* dict = [[self accountInfo] mutableCopy];
     [dict setObject: [NSNumber numberWithInt: flag] forKey: @"downloadExtraFolders"];
     [self setAccountInfo: dict];
 }
@@ -1524,7 +1524,7 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
 }
 
 - (void) setShouldSynchonize: (BOOL)flag {
-    NSMutableDictionary* dict = [self accountInfo];
+    NSMutableDictionary* dict = [[self accountInfo] mutableCopy];
     [dict setObject: [NSNumber numberWithInt: flag] forKey: @"synchronize"];
     [self setAccountInfo: dict];
 }
