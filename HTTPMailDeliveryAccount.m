@@ -83,6 +83,11 @@
     return [NSString stringWithFormat: @"HTTPMail:%@", [self username]];
 }
 #endif
+#ifdef TARGET_LEOPARD
+- (NSString*) identifier {
+    return [NSString stringWithFormat: @"HTTPMail:%@", [self username]];
+}
+#endif
 
 /*
 - (NSString*) username {
