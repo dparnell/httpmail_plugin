@@ -13,7 +13,7 @@
 + (DPKeychain*)newWithPath: (NSString*)aPath {
     DPKeychain* result = [DPKeychain new];
     
-    SecKeychainOpen([aPath cString], &result->keychain);
+    SecKeychainOpen([aPath cStringUsingEncoding: NSUTF8StringEncoding], &result->keychain);
     
     return result;
 }

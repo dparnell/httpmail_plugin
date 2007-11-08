@@ -751,7 +751,7 @@
             // no response, so it looks like something really bad happened!
             fResponseString = NULL;
             fResponseCode = -1;
-            [result appendBytes: (void*)[response cString] length: [response length]];
+            [result appendBytes: (void*)[response cStringUsingEncoding: NSASCIIStringEncoding] length: [response length]];
         }
             
         // get the data for the request
@@ -1066,8 +1066,9 @@
 
 - (void)setRequestContentAsString:(NSString*)string {
     NSMutableData* body = [NSMutableData data];
-    
-    [body appendBytes: [string cString] length: [string length]];
+    const char* buf = [string cStringUsingEncoding: NSUTF8StringEncoding];
+	
+    [body appendBytes: buf length: strlen(buf)];
     
     [self setRequestContent: body];
 }

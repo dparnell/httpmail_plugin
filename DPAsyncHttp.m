@@ -511,8 +511,9 @@
 
 - (void)setRequestContentAsString:(NSString*)string {
     NSMutableData* data = [NSMutableData data];
-    
-    [data appendBytes: [string cString] length: [string length]];
+    const char* buf = [string cStringUsingEncoding: NSUTF8StringEncoding];
+	
+    [data appendBytes: buf length: strlen(buf)];
     
     [self setRequestContent: data];
 }

@@ -54,7 +54,7 @@
 + (NSDictionary*)dictionaryFromString:(NSString*)string separatedBy:(char)sepchar {
     NSMutableDictionary* result = [NSMutableDictionary dictionary];
     NSRange r;
-    const char* buf = [string cString];
+    const char* buf = [string cStringUsingEncoding: NSNonLossyASCIIStringEncoding];
     NSString* name;
     NSString* value;
     unsigned int i, L;
@@ -143,13 +143,15 @@ static __inline__ unsigned char invchar64(unsigned char b)
     char			*dest, groupv[4], b;
     int				i, bytec = 0, groupc = 0;
     unsigned int	numgroups, groupsPerLine, dataLength;
-
-    source = [string cString];
-    endOfSource = source + [string length];
+	int				L;
+	
+    source = [string cStringUsingEncoding: NSUTF8StringEncoding];
+	L = strlen(source);
+    endOfSource = source + L;
 
     if(lineLength == 0)
         lineLength = UINT_MAX;
-    numgroups = udivroundup([string length], 3);
+    numgroups = udivroundup(L, 3);
     groupsPerLine = lineLength / 4;
     if(groupsPerLine == 0)
         [NSException raise:NSInvalidArgumentException format:@"Line length must be > 3"];

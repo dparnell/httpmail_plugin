@@ -107,7 +107,7 @@
 
     int fHandle = 0;
     
-    h = gethostbyname([host cString]);
+    h = gethostbyname([host cStringUsingEncoding: NSASCIIStringEncoding]);
     if(h==NULL) {
         [NSException raise: SOCKET_ERROR format: @"Could not find host: %@", host];
     }

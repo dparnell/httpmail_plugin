@@ -81,7 +81,7 @@ void CB_exceptionHandler( NSException *exception )
 #endif
 
 static UInt32 getOSVersion() {
-	UInt32 result;
+	SInt32 result;
 	Gestalt(gestaltSystemVersion, &result);
 	
 	return result;

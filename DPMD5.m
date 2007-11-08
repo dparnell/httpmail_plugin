@@ -14,11 +14,13 @@
 + (NSString*)computeFor:(NSString*)value {
     EVP_MD_CTX mdctx;
     unsigned char md_value[EVP_MAX_MD_SIZE];
-    int md_len, i;
+    unsigned int md_len, i;
     NSMutableString* result = [NSMutableString string];
-    
+    const char* buf;
+	
+	buf = [value cStringUsingEncoding: NSUTF8StringEncoding];
     EVP_DigestInit(&mdctx, EVP_md5());
-    EVP_DigestUpdate(&mdctx, [value cString], [value length]);
+    EVP_DigestUpdate(&mdctx, buf, strlen(buf));
     EVP_DigestFinal(&mdctx, md_value, &md_len);
     
     for(i=0; i<md_len; i++) {

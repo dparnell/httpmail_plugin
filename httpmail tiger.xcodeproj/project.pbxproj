@@ -382,7 +382,6 @@
 		6593A6BB0CD6BF5900B6A595 /* DPHTTPMailPreferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = 65A21A0805E408CF00A21107 /* DPHTTPMailPreferences.nib */; };
 		6593A6BC0CD6BF5900B6A595 /* httpmail.png in Resources */ = {isa = PBXBuildFile; fileRef = 654CD7C806C705E400241101 /* httpmail.png */; };
 		6593A6BD0CD6BF5900B6A595 /* HTTPMailDebugWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = 65E632FC082F06A600CBE57D /* HTTPMailDebugWindow.nib */; };
-		6593A6BE0CD6BF5900B6A595 /* HTTPMailDebugWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = 65E63313082F078600CBE57D /* HTTPMailDebugWindow.nib */; };
 		6593A6C00CD6BF5900B6A595 /* httpmailBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = F556CB96033BE7E301140587 /* httpmailBundle.m */; };
 		6593A6C10CD6BF5900B6A595 /* HTTPMailAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = F5083861033C188701140587 /* HTTPMailAccount.m */; };
 		6593A6C20CD6BF5900B6A595 /* DPhttpmail.m in Sources */ = {isa = PBXBuildFile; fileRef = F508387E033FBD9701140587 /* DPhttpmail.m */; };
@@ -417,7 +416,6 @@
 		65E632FF082F06A600CBE57D /* HTTPMailDebugWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = 65E632FC082F06A600CBE57D /* HTTPMailDebugWindow.nib */; };
 		65E63300082F06A600CBE57D /* HTTPMailUpdateChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E632FE082F06A600CBE57D /* HTTPMailUpdateChecker.m */; };
 		65E63306082F076B00CBE57D /* DPHTTPMailDebugger.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E63305082F076B00CBE57D /* DPHTTPMailDebugger.m */; };
-		65E63314082F078600CBE57D /* HTTPMailDebugWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = 65E63313082F078600CBE57D /* HTTPMailDebugWindow.nib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -4657,7 +4655,6 @@
 				6547D568070794140090F5E2 /* DPHTTPMailPreferences.nib in Resources */,
 				6547D569070794140090F5E2 /* httpmail.png in Resources */,
 				65E632FF082F06A600CBE57D /* HTTPMailDebugWindow.nib in Resources */,
-				65E63314082F078600CBE57D /* HTTPMailDebugWindow.nib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4743,7 +4740,6 @@
 				6593A6BB0CD6BF5900B6A595 /* DPHTTPMailPreferences.nib in Resources */,
 				6593A6BC0CD6BF5900B6A595 /* httpmail.png in Resources */,
 				6593A6BD0CD6BF5900B6A595 /* HTTPMailDebugWindow.nib in Resources */,
-				6593A6BE0CD6BF5900B6A595 /* HTTPMailDebugWindow.nib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

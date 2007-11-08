@@ -132,7 +132,7 @@ static NSString* SOCKET_ERROR = @"Socket Error";
     
     fHandle = 0;
     
-    h = gethostbyname([fHost cString]);
+    h = gethostbyname([fHost cStringUsingEncoding: NSUTF8StringEncoding]);
     if(h==NULL) {
         [NSException raise: SOCKET_ERROR format: @"Could not find host: %@", fHost];
     }
@@ -233,7 +233,7 @@ static NSString* SOCKET_ERROR = @"Socket Error";
 
 -(int)writeString:(NSString*)string {
     int L = [string length];
-    char* data = (char*)[string cString];
+    char* data = (char*)[string cStringUsingEncoding: NSUTF8StringEncoding];
     
     if(L>0) {
         return [self write: L from: data];
@@ -304,7 +304,7 @@ static NSString* SOCKET_ERROR = @"Socket Error";
     }
     
     if(fPort==0) {
-        int s = sizeof(saddr);
+        unsigned int s = sizeof(saddr);
         ret = getsockname(fHandle, (struct sockaddr*)&saddr, &s);
         
         if(ret!=0) {
