@@ -11,6 +11,10 @@
 #import "mail-api.h"
 #import "DPhttpmail.h"
 
+#ifdef TARGET_LEOPARD
+#import "SMTPDelivery.h"
+#endif
+
 @interface HTTPMailDeliveryAccount : SMTPAccount {
 //    HTTPMailAccount* httpmail;
 }
@@ -29,3 +33,10 @@
 + newWithAccount: (HTTPMailAccount*)account;
 
 @end
+
+#ifdef TARGET_LEOPARD
+@interface HTTPMailDelivery : SMTPDelivery {
+}
+
+@end
+#endif

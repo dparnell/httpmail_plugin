@@ -8,8 +8,12 @@
 
 #import "HTTPMailDeliveryAccount.h"
 #import "HTTPMailConnection.h"
-#import "HTTPMailDelivery.h"
 #import "Localization.h"
+
+#ifdef TARGET_LEOPARD
+#import "Subdata.h"
+#import "ActivityMonitor.h"
+#endif
 
 @implementation HTTPMailDeliveryAccount
 
@@ -17,7 +21,7 @@
     NSLog(@"HTTPMailDeliveryAccount doesNotRecognizeSelector: %s", aSelector);
 }
 
-+ newWithAccount: (HTTPMailAccount*)account {
++ (id)newWithAccount: (HTTPMailAccount*)account {
     HTTPMailDeliveryAccount* result = [HTTPMailDeliveryAccount new];
     // result->httpmail = account;
 
@@ -32,11 +36,11 @@
     return result;
 }
 
-+ accountTypeString {
-    return @"HTTPMailDelivery";
++ (id)accountTypeString {
+    return @"HTTPMail";
 }
 
-+ newDefaultInstance {
++ (id)newDefaultInstance {
     return [HTTPMailDeliveryAccount new];
 }
 
@@ -68,12 +72,12 @@
     return nil;
 }
 
-- authenticatedConnectionForDomain:fp12 errorMessage:(id *)fp16 {    
+- (id)authenticatedConnectionForDomain:fp12 errorMessage:(id *)fp16 {    
     return [HTTPMailDeliveryConnection newWithAccount: [self findAccount]];
 }
 
 #ifndef TARGET_JAGUAR
-- authenticatedConnection {
+- (id)authenticatedConnection {
     return [HTTPMailDeliveryConnection newWithAccount: [self findAccount]];
 }
 #endif
@@ -88,23 +92,6 @@
     return [NSString stringWithFormat: @"HTTPMail:%@", [self username]];
 }
 #endif
-
-/*
-- (NSString*) username {
-    return [httpmail firstEmailAddress];
-}
-
-- (NSString*) hostname {
-    NSString* provider = [httpmail providerURL];
-    if(provider) {
-        NSURL* url = [NSURL URLWithString: provider];
-    
-        return [url host];
-    }
-    
-    return nil;
-}
-*/
 
 @end
 
@@ -138,11 +125,11 @@
     return YES;
 }
 
-- (BOOL)authenticateUsingAccount:fp12 authenticator:fp16 errorMessage:(id *)fp20 {
+- (BOOL)authenticateUsingAccount:(id)fp12 authenticator:fp16 errorMessage:(id *)fp20 {
     return YES;
 }
 
-- (BOOL)connectUsingAccount:fp12 errorMessage:(id *)fp16 {    
+- (BOOL)connectUsingAccount:(id)fp12 errorMessage:(id *)fp16 {    
     return YES;
 }
 
@@ -150,6 +137,8 @@
     @try {    
 
         if(![mail isConnected]) {
+			[[ActivityMonitor currentMonitor] setStatusMessage: LocalizedString(@"Connecting..." , @"")];
+			
             if(![mail login]) {
                 NS_VALUERETURN(4, int);
             }
@@ -170,6 +159,8 @@
 - (int)rcptTo:(NSString*)address {   
     @try {    
         if(![mail isConnected]) {
+			[[ActivityMonitor currentMonitor] setStatusMessage: LocalizedString(@"Connecting..." , @"")];
+			
             if(![mail login]) {
                 NS_VALUERETURN(4, int);
             }
@@ -195,6 +186,8 @@
 - (int)sendData:(NSData*)body {
     @try {    
         if(![mail isConnected]) {
+			[[ActivityMonitor currentMonitor] setStatusMessage: LocalizedString(@"Connecting..." , @"")];
+			
             if(![mail login]) {
                 NS_VALUERETURN(4, int);
             }
@@ -234,5 +227,18 @@
     
     return 2;
 }
+
+#ifdef TARGET_LEOPARD
+- (int)sendDatas:(NSArray*)datas {
+	NSMutableData* data = [NSMutableData new];
+	NSEnumerator* e = [datas objectEnumerator];
+	NSData* part;
+	while(part=[e nextObject]) {
+		[data appendData: part];
+	}
+	
+	return [self sendData: data];
+}
+#endif
 
 @end
