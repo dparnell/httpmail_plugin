@@ -54,7 +54,7 @@
 + (NSDictionary*)dictionaryFromString:(NSString*)string separatedBy:(char)sepchar {
     NSMutableDictionary* result = [NSMutableDictionary dictionary];
     NSRange r;
-    const char* buf = [string cStringUsingEncoding: NSNonLossyASCIIStringEncoding];
+    const char* buf = [string cStringUsingEncoding: NSUTF8StringEncoding];
     NSString* name;
     NSString* value;
     unsigned int i, L;

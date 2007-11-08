@@ -218,7 +218,7 @@
                         int L = [encodedName length];
                         
                         if(L>0) {
-							const char* buf = [encodedName cStringUsingEncoding: NSUTF8StringEncoding];
+							const char* buf = [encodedName cStringUsingEncoding: [NSString defaultCStringEncoding]];
                             NSData* nameData = [NSData dataWithBytes: buf length: strlen(buf)];
                             NSString* name = [[[NSString alloc] initWithData: nameData encoding: fEncoding] stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceCharacterSet]];
                             name = [name decomposedStringWithCanonicalMapping];
