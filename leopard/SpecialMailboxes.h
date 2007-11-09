@@ -4,9 +4,7 @@
  *     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2005 by Steve Nygard.
  */
 
-#import "NSObject.h"
-
-@class NSButton, NSPopUpButton, NSView;
+#import <Cocoa/Cocoa.h>
 
 @interface SpecialMailboxes : NSObject
 {

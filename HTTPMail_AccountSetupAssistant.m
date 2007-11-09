@@ -17,6 +17,22 @@
     [HTTPMail_AccountSetupAssistant poseAsClass:[AccountSetupAssistant class]];
 }
 
+#ifdef TARGET_LEOPARD
+
+- (void) awakeFromNib {
+//	NSLog(@"items = %@", [_incomingTypePopUp itemArray]);
+	NSMenu* menu = [_incomingTypePopUp menu];
+	NSMenuItem* item = [[NSMenuItem alloc] initWithTitle: @"HTTPMail" action: nil keyEquivalent: @""];
+	NSImage* img = [[NSImage alloc] initByReferencingFile: [[NSBundle bundleForClass: [HTTPMailAccount class]] pathForResource: @"httpmail" ofType: @"png"]];
+	[img setScalesWhenResized: YES];
+	[img setSize: NSMakeSize(16.0, 16.0)];
+	[item setImage: img];
+	
+	[menu addItem: item];
+}
+
+#else
+
 - (BOOL)_shouldSkipIncomingSecurityTabForSelectedAccountBasedOnISPInfo:(id)fp8 {
 	if([[self _account] isKindOfClass: [HTTPMailAccount class]]) {
 		return YES;
@@ -48,5 +64,7 @@
     
     return [super _validateValesInTabAtIndex: index];
 }
+#endif
 
 @end
+
