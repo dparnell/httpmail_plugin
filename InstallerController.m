@@ -5,7 +5,7 @@
 #define BUNDLE_NAME @"httpmail.mailbundle"
 
 static UInt32 getOSVersion() {
-	UInt32 result;
+	SInt32 result;
 	Gestalt(gestaltSystemVersion, &result);
 	
 	return result;

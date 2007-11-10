@@ -5226,13 +5226,17 @@
 		6593A6E20CD6BF5900B6A595 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
 				COPY_PHASE_STRIP = YES;
 				DEPLOYMENT_LOCATION = NO;
 				DEPLOYMENT_POSTPROCESSING = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = TARGET_TIGER;
+				GCC_PREPROCESSOR_DEFINITIONS = TARGET_LEOPARD;
 				GCC_USE_GCC3_PFE_SUPPORT = NO;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Info-httpmail_10.5.plist";
@@ -5248,6 +5252,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = httpmail;
 				SECTORDER_FLAGS = "";
+				VALID_ARCHS = "ppc64 ppc7400 ppc970 i386 x86_64 ppc";
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wno-four-char-constants",
@@ -5718,6 +5723,10 @@
 		65BDF0B108639CB200874D09 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
 				COPY_PHASE_STRIP = YES;
 				DEPLOYMENT_LOCATION = NO;
 				DEPLOYMENT_POSTPROCESSING = YES;
