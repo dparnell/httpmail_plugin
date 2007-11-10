@@ -24,5 +24,6 @@
 
 - (void)startDebugger:(id)sender;
 - (void)checkForUpdates:(id)sender;
+- (void)donate:(id)sender;
 
 @end

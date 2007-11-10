@@ -1,26 +1,133 @@
-{
-    IBClasses = (
-        {
-            ACTIONS = {checkForUpdates = id; startDebugger = id; }; 
-            CLASS = DPHTTPMailPreferences; 
-            LANGUAGE = ObjC; 
-            OUTLETS = {
-                createDetailedErrors = NSButton; 
-                failureMessages = NSButton; 
-                foldersUnderInbox = NSButton; 
-                getSentItems = NSButton; 
-                ignoreNetworkState = NSButton; 
-                preferencesView = NSBox; 
-                timeout = NSSlider; 
-                updates = NSButton; 
-                userAgent = NSComboBox; 
-                versionLabel = NSTextField; 
-            }; 
-            SUPERCLASS = NSPreferencesModule; 
-        }, 
-        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
-        {CLASS = NSPreferences; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
-        {CLASS = NSPreferencesModule; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
-    ); 
-    IBVersion = 1; 
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IBClasses</key>
+	<array>
+		<dict>
+			<key>CLASS</key>
+			<string>NSMenu</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+		<dict>
+			<key>CLASS</key>
+			<string>NSWindow</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSResponder</string>
+		</dict>
+		<dict>
+			<key>CLASS</key>
+			<string>NSView</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSResponder</string>
+		</dict>
+		<dict>
+			<key>CLASS</key>
+			<string>FirstResponder</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>checkForUpdates</key>
+				<string>id</string>
+				<key>donate</key>
+				<string>id</string>
+				<key>startDebugger</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>DPHTTPMailPreferences</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>OUTLETS</key>
+			<dict>
+				<key>createDetailedErrors</key>
+				<string>NSButton</string>
+				<key>failureMessages</key>
+				<string>NSButton</string>
+				<key>foldersUnderInbox</key>
+				<string>NSButton</string>
+				<key>getSentItems</key>
+				<string>NSButton</string>
+				<key>ignoreNetworkState</key>
+				<string>NSButton</string>
+				<key>preferencesView</key>
+				<string>NSBox</string>
+				<key>timeout</key>
+				<string>NSSlider</string>
+				<key>updates</key>
+				<string>NSButton</string>
+				<key>userAgent</key>
+				<string>NSComboBox</string>
+				<key>versionLabel</key>
+				<string>NSTextField</string>
+			</dict>
+			<key>SUPERCLASS</key>
+			<string>NSPreferencesModule</string>
+		</dict>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>downloadFinished</key>
+				<string>DPAsyncHttp</string>
+				<key>downloadStopped</key>
+				<string>DPAsyncHttp</string>
+			</dict>
+			<key>CLASS</key>
+			<string>NSObject</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+		</dict>
+		<dict>
+			<key>CLASS</key>
+			<string>NSCell</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+		<dict>
+			<key>CLASS</key>
+			<string>NSTextFieldCell</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSActionCell</string>
+		</dict>
+		<dict>
+			<key>CLASS</key>
+			<string>NSPreferencesModule</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+		<dict>
+			<key>CLASS</key>
+			<string>DPAsyncHttp</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>OUTLETS</key>
+			<dict>
+				<key>delegate</key>
+				<string>id</string>
+			</dict>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+	</array>
+	<key>IBVersion</key>
+	<string>1</string>
+</dict>
+</plist>

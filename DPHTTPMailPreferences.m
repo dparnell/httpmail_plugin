@@ -110,4 +110,8 @@
     [HTTPMailUpdateChecker checkForUpdates: YES];
 }
 
+- (void)donate:(id)sender {
+	[[NSWorkspace sharedWorkspace] openFile: [[NSBundle bundleForClass: [self class]] pathForResource: @"donate" ofType: @"html"]];
+}
+
 @end
