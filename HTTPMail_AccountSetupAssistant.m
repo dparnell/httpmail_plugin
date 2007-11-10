@@ -20,7 +20,7 @@
 #ifdef TARGET_LEOPARD
 
 - (void) awakeFromNib {
-//	NSLog(@"items = %@", [_incomingTypePopUp itemArray]);
+	// Add in the HTTPMail account type
 	NSMenu* menu = [_incomingTypePopUp menu];
 	NSMenuItem* item = [[NSMenuItem alloc] initWithTitle: @"HTTPMail" action: nil keyEquivalent: @""];
 	NSImage* img = [[NSImage alloc] initByReferencingFile: [[NSBundle bundleForClass: [HTTPMailAccount class]] pathForResource: @"httpmail" ofType: @"png"]];
@@ -29,6 +29,40 @@
 	[item setImage: img];
 	
 	[menu addItem: item];
+}
+
+- (void) setIncomingAccountClassIndex:(int) index {
+	[super setIncomingAccountClassIndex: index];
+
+	if(index==[_incomingTypePopUp indexOfItemWithTitle: @"HTTPMail"]) {
+		[self setIncomingMailServer: @"hotmail.com"];
+		[self setIncomingUserName: [self emailAddress]];
+	}
+}
+
+- (void)_validateReceivingAccount {
+	if([[_incomingTypePopUp titleOfSelectedItem] isEqualToString: @"HTTPMail"]) {
+		HTTPMailAccount* account = [HTTPMailAccount new];
+		NSString* path = [HTTPMailAccount defaultPathNameForAccountWithHostname: [self incomingMailServer] username: [self incomingUserName]];
+		NSDictionary* dict = [NSDictionary dictionaryWithObjectsAndKeys: 
+									[self incomingDescription],						@"AccountName",
+									[self name],									@"FullUserName",
+									path,											@"AccountPath",
+									@"HTTPMailAccount",								@"AccountType",
+									[NSArray arrayWithObject: [self emailAddress]],	@"EmailAddresses",
+									[self incomingUserName],						@"Username",
+									[self incomingMailServer],						@"Hostname",
+									nil];
+											
+		[account setAccountInfo: dict];
+		[account setPassword: [self password]];
+		
+		[self setReceivingAccount: account];
+		[self setDeliveryAccount: [account deliveryAccount]];
+		[self setSelectedTab: 5];
+	} else {
+		[super _validateReceivingAccount];
+	}
 }
 
 #else
