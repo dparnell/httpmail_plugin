@@ -324,28 +324,31 @@ DPhttpmailCache* httpmailCache = nil;
         NSFileManager* fm = [NSFileManager defaultManager];
         NSDirectoryEnumerator* enumerator = [fm enumeratorAtPath: path];
         NSString* file;
-        
+		
         while(file=[enumerator nextObject]) {
             if ([[file pathExtension] isEqualToString:@"mbox"]) {
                     NSString* folderName = [file stringByDeletingPathExtension];
+
+#ifdef TARGET_LEOPARD
+					NSString* folderUrl = [[[self rootMailboxUid] URLString] stringByAppendingString: [folderName stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
+					MailboxUid* folderUid = [MailAccount mailboxUidForURL: folderUrl forceCreation: YES];
+					if(folderUid==nil) {
+						NSLog(@"could not find folder: %@", folderUrl);
+					}
+#else
                     MailboxUid* folderUid = [self mailboxUidFromName: folderName];                    
+//					NSLog(@"folderName = '%@'  folderUid = %@", folderName, folderUid);
                     if(folderUid==NULL) {
 						
-                        if([httpmailBundle foldersUnderInbox]) {
+                        if(putFoldersUnderInbox) {
                             folderUid = [self createMailboxWithParent: [self primaryMailboxUid] name: folderName];
-#ifdef TARGET_LEOPARD
-							[self _insertMailbox: folderUid intoParent: [self primaryMailboxUid] withName: folderName];
-#endif
                         } else {
                             folderUid = [self createMailboxWithParent: [self rootMailboxUid] name: folderName];
-#ifdef TARGET_LEOPARD
-							[self _insertMailbox: folderUid intoParent: [self rootMailboxUid] withName: folderName];
-#endif
                         }
 
 						[LibraryStore createEmptyStoreIfNeededForPath: [folderUid fullPath] notIndexable: NO];						
                     }
-                    
+#endif                    
                     [enumerator skipDescendents];
             }
         }
@@ -356,6 +359,12 @@ DPhttpmailCache* httpmailCache = nil;
 	return YES;
 }
 
+
+#ifdef TARGET_LEOPARD
+- (BOOL) _deleteMailbox:(id)dummy {
+	return YES;
+}
+#endif
 
 /*
 - (id)storeForMailboxUid:(MailboxUid*)uid {
@@ -1130,8 +1139,21 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
 #ifdef TARGET_LEOPARD
 					[MailAccount _enableMailboxListingNotifications: YES];
 #endif
-                    
+
+#ifdef TARGET_LEOPARD
+					NSString* folderUrl;
+					if(putFoldersUnderInbox) {
+						NSString* inboxUrl = [[self primaryMailboxUid] URLString];
+						folderUrl = [NSString stringWithFormat: @"%@/%@", inboxUrl, [folderName stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
+					} else {
+						folderUrl = [NSString stringWithFormat: @"%@/%@", [self URLString], [folderName stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
+					}
+					MailboxUid* folderUid = [MailAccount mailboxUidForURL: folderUrl forceCreation: YES];
+					
+//					NSLog(@"folderUrl=%@ folderUid=%@", folderUrl, folderUid);
+#else                    
                     MailboxUid* folderUid = [self mailboxUidFromName: folderName];
+#endif
                     
                     if(folderUid==NULL) {
 #ifdef TARGET_JAGUAR            
@@ -1155,15 +1177,7 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
 						[LibraryStore createEmptyStoreIfNeededForPath: [folderUid fullPath] notIndexable: NO];
 #else
 #ifdef TARGET_LEOPARD
-                        if(putFoldersUnderInbox) {
-                            folderUid = [self createMailboxWithParent: [self primaryMailboxUid] name: folderName];
-							[self _insertMailbox: folderUid intoParent: [self primaryMailboxUid] withName: folderName];
-                        } else {
-                            folderUid = [self createMailboxWithParent: [self rootMailboxUid] name: folderName];
-							[self _insertMailbox: folderUid intoParent: [self rootMailboxUid] withName: folderName];
-                        }
-
-						[LibraryStore createEmptyStoreIfNeededForPath: [folderUid fullPath] notIndexable: NO];
+	// do nothing
 #else
 #error fix me
 #endif
@@ -1223,6 +1237,9 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
     MailboxUid* result = m->method_imp(self, @selector(primaryMailboxUid));
 #else
 	MailboxUid* result = [super primaryMailboxUid];
+	if([httpmailBundle foldersUnderInbox]) {
+		[result setAttributes: 4];
+	}
 #endif
 
 #ifdef DESCEND_FROM_IMAP_ACCOUNT
@@ -1609,18 +1626,18 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
 	LibraryIMAPStore* store = [self storeForMailboxUid: mailbox];
 	
 	if(store==nil) {
-		NSLog(@"looking for mailbox");
+//		NSLog(@"looking for mailbox");
 		NSArray* stores = [MessageStore currentlyAvailableStoresForAccount: self];
 		NSString* mailboxUrl = [mailbox URLString];
-		NSLog(@"stores = %@", stores);
-		NSLog(@"mailboxUrl = %@", mailboxUrl);
+//		NSLog(@"stores = %@", stores);
+//		NSLog(@"mailboxUrl = %@", mailboxUrl);
 		C = [stores count];
 		for(i=0; i<C; i++) {
 			LibraryIMAPStore* tmp = [stores objectAtIndex: i];
-			NSLog(@" url = %@", [[tmp mailboxUid] URLString]);
+//			NSLog(@" url = %@", [[tmp mailboxUid] URLString]);
 			
 			if([[[tmp mailboxUid] URLString] isEqualToString: mailboxUrl]) {
-				NSLog(@"found mailbox: %@", tmp);
+//				NSLog(@"found mailbox: %@", tmp);
 				store = tmp;
 				break;
 			}
@@ -1628,18 +1645,18 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
 		
 	//	LibraryIMAPStore* store = [MessageStore currentlyAvailableStoreForUid: mailbox];
 		if(store==nil) {	
-			NSLog(@"calling createEmptyStoreIfNeededForPath");
+//			NSLog(@"calling createEmptyStoreIfNeededForPath");
 			[LibraryIMAPStore createEmptyStoreIfNeededForPath: [mailbox fullPath] notIndexable: NO];
-			NSLog(@"creating store");
+//			NSLog(@"creating store");
 			store = [[[LibraryIMAPStore alloc] initWithMailboxUid: mailbox readOnly: NO] autorelease];
 	//		id x = [MessageStore registerAvailableStore: store];
 	//		NSLog(@"*** x = %@", x);
 	//		store = [LibraryStore storeWithMailbox: mailbox];
 		} else {
-			NSLog(@"found existing store");
+//			NSLog(@"found existing store");
 		}
 	} else {
-		NSLog(@"got existing store");
+//		NSLog(@"got existing store");
 	}
 	
 	return [self addMessage: message toStore: store withFlags: flags];

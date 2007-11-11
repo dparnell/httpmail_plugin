@@ -23,7 +23,7 @@
     NSButton *_newCalendarOKButton;
     NSView *_exportChildrenView;
     NSButton *_exportChildrenCheckbox;
-    // Error parsing type: @"<MVMailboxSelectionOwner>", name: _currentMailboxSelectionOwner
+    id _currentMailboxSelectionOwner
     BOOL _currentTransferIsCopy;
     MailboxUid *_selectedParent;
     MailboxUid *_currentTransferMailbox;
