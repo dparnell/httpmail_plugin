@@ -22,9 +22,6 @@
 + (void) checkForUpdates:(BOOL) showOK {
     NSData* data;
     
-#ifdef TARGET_LEOPARD
-#warning update checking is off
-#else
 #ifdef USE_ASYNC_HTTP
     DPAsyncHttp* http = [DPAsyncHttp new];
 #else
@@ -62,7 +59,6 @@
         NSRunInformationalAlertPanel(LocalizedString(@"Error checking for HttpMail Plugin updates", nil), 
                                      [NSString stringWithFormat: LocalizedString(@"Could not download the version information: %d %@", nil), [http responseCode], [http responseString]], @"Ok", nil, nil);
     }
-#endif
 }
 
 @end
