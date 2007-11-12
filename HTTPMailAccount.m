@@ -332,6 +332,7 @@ DPhttpmailCache* httpmailCache = nil;
 #ifdef TARGET_LEOPARD
 					NSString* folderUrl = [[[self rootMailboxUid] URLString] stringByAppendingString: [folderName stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
 					MailboxUid* folderUid = [MailAccount mailboxUidForURL: folderUrl forceCreation: YES];
+					
 					if(folderUid==nil) {
 						NSLog(@"could not find folder: %@", folderUrl);
 					}
@@ -1237,9 +1238,7 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
     MailboxUid* result = m->method_imp(self, @selector(primaryMailboxUid));
 #else
 	MailboxUid* result = [super primaryMailboxUid];
-	if([httpmailBundle foldersUnderInbox]) {
-		[result setAttributes: 4];
-	}
+	[result setAttributes: 4];
 #endif
 
 #ifdef DESCEND_FROM_IMAP_ACCOUNT
