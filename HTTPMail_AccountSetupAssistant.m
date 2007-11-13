@@ -52,6 +52,10 @@
 									[NSArray arrayWithObject: [self emailAddress]],	@"EmailAddresses",
 									[self incomingUserName],						@"Username",
 									[self incomingMailServer],						@"Hostname",
+									@"NO",											@"StoreDraftsOnServer",
+									@"NO",											@"StoreNotesInInbox",
+									@"NO",											@"StoreSentMessagesOnServer",
+									@"NO",											@"StoreTrashOnServer",
 									nil];
 											
 		[account setAccountInfo: dict];
