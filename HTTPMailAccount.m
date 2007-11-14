@@ -1144,10 +1144,9 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
 #ifdef TARGET_LEOPARD
 					NSString* folderUrl;
 					if(putFoldersUnderInbox) {
-						NSString* inboxUrl = [[self primaryMailboxUid] URLString];
-						folderUrl = [NSString stringWithFormat: @"%@/%@", inboxUrl, [folderName stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
+						folderUrl = [NSString stringWithFormat: @"%@/%@", [[self primaryMailboxUid] URLString], [folderName stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
 					} else {
-						folderUrl = [NSString stringWithFormat: @"%@/%@", [self URLString], [folderName stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
+						folderUrl = [[[self rootMailboxUid] URLString] stringByAppendingString: [folderName stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
 					}
 					MailboxUid* folderUid = [MailAccount mailboxUidForURL: folderUrl forceCreation: YES];
 					
@@ -1238,7 +1237,11 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
     MailboxUid* result = m->method_imp(self, @selector(primaryMailboxUid));
 #else
 	MailboxUid* result = [super primaryMailboxUid];
-	[result setAttributes: 4];
+	if([httpmailBundle foldersUnderInbox]) {
+		[result setAttributes: 4];
+	} else {
+		[result setAttributes: 1];
+	}	
 #endif
 
 #ifdef DESCEND_FROM_IMAP_ACCOUNT
