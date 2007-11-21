@@ -1774,6 +1774,10 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
 	return nil;
 }
 
+- (void)_synchronizeAccountWithServerWithUserInput:(id)fp8 {
+	// do nothing
+}
+
 #endif
 
 @end
