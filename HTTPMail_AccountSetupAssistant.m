@@ -44,8 +44,13 @@
 	if([[_incomingTypePopUp titleOfSelectedItem] isEqualToString: @"HTTPMail"]) {
 		HTTPMailAccount* account = [HTTPMailAccount new];
 		NSString* path = [HTTPMailAccount defaultPathNameForAccountWithHostname: [self incomingMailServer] username: [self incomingUserName]];
+		NSString* description = [self incomingDescription];
+		if(description==nil) {
+			description = @"Hotmail Account";
+		}
+		
 		NSDictionary* dict = [NSDictionary dictionaryWithObjectsAndKeys: 
-									[self incomingDescription],						@"AccountName",
+									description,									@"AccountName",
 									[self name],									@"FullUserName",
 									path,											@"AccountPath",
 									@"HTTPMailAccount",								@"AccountType",

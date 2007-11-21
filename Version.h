@@ -7,7 +7,7 @@
  * 
  */
 
-#define VERSION_NUMBER 1.50 
+#define VERSION_NUMBER 1.51
 
 #ifdef TARGET_JAGUAR
 #define VERSION_TARGET @"Jaguar"

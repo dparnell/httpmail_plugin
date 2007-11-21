@@ -205,19 +205,9 @@ static NSLock* lock = nil;
 
     [[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(mailWillTerminate:) name: NSApplicationWillTerminateNotification object: NSApp];
     [self loadHTTPMailAccounts];
-    
-/*
+/*	    
     NSMutableArray* accounts;
     accounts = [MailAccount mailAccounts];
-//    accounts = [DeliveryAccount deliveryAccounts];
- 
-    NSData* data = [NSData dataWithContentsOfFile: @"/Users/daniel/myhotmailmail.plist"];
-    id dict = [NSPropertyListSerialization propertyListFromData: data mutabilityOption: NSPropertyListImmutable format: nil errorDescription: nil];
-//    NSLog(@"dict = %@", dict);
-    MailAccount* account = [HTTPMailAccount createAccountWithDictionary: dict];
-    
-    [accounts addObject: account];
-    
     int i, C;
     C = [accounts count];
     for(i=0; i<C; i++) {
@@ -277,7 +267,6 @@ static NSString* httpmailPrefs = @"~/Library/Preferences/person.djlp.mail.plist"
  
 + (void) saveHTTPMailAccounts {
 #ifndef TARGET_JAGUAR
-#ifndef TARGET_LEOPARD
     NSArray* accounts = [MailAccount mailAccounts];
     int i, C;
     
@@ -292,14 +281,11 @@ static NSString* httpmailPrefs = @"~/Library/Preferences/person.djlp.mail.plist"
             [list addObject: dict];
         }
     }
-#endif
 #endif 
     NSMutableDictionary* dict = [NSMutableDictionary dictionary];
     
 #ifndef TARGET_JAGUAR
-#ifndef TARGET_LEOPARD
     [dict setObject: list forKey: ACCOUNTS];
-#endif
 #endif    
     [dict setObject: [NSNumber numberWithBool: downloadSentItems] forKey: DOWNLOAD_SENT_ITEMS];
     [dict setObject: [NSNumber numberWithBool: foldersUnderInbox] forKey: FOLDERS_UNDER_INBOX];
@@ -363,31 +349,47 @@ static NSString* httpmailPrefs = @"~/Library/Preferences/person.djlp.mail.plist"
         }
         
 #ifndef TARGET_JAGUAR
-        int i, C;
-        
-        C = [httpmailAccounts count];
-        for(i=0; i<C; i++) {
-            NSDictionary* dict = [httpmailAccounts objectAtIndex: i];
+		NSArray* existingAccounts = [MailAccount mailAccounts];
+		
+		NSEnumerator* e;
+		NSDictionary* dict;
+		e = [httpmailAccounts objectEnumerator];
+        while(dict = [e nextObject]) {
             MailAccount* account;
             NSString* type = [dict objectForKey: @"AccountType"];
             
             if([type isEqualToString: @"HTTPMailAccount"]) {
-                account = [HTTPMailAccount createAccountWithDictionary: dict];
+				NSEnumerator* ee = [existingAccounts objectEnumerator];
+				MailAccount* existingAccount;
+				BOOL found = NO;
+				
+				while(existingAccount = [ee nextObject]) {
+					if([[existingAccount displayName] isEqualToString: [dict objectForKey: @"AccountName"]]) {
+						NSLog(@"Account '%@' already loaded", [dict objectForKey: @"AccountName"]);
+						found = YES;
+						break;
+					}
+				}
+				
+				if(found) {
+					account = nil;
+				} else {
+					NSLog(@"Recreating account '%@'", [dict objectForKey: @"AccountName"]);
+					account = [HTTPMailAccount createAccountWithDictionary: dict];
+				}
             }/* else 
             if([type isEqualToString: @"DPAsyncHttpMailAccount"]) {
                 account = [DPAsyncHttpMailAccount createAccountWithDictionary: dict];
             }*/ else {
                 account = nil;
             }
-            
-			[account setShouldMoveDeletedMessagesToTrash: YES];
-			
+            			
             if(account) {
+				[account setShouldMoveDeletedMessagesToTrash: YES];
                 [NSApp insertInAccounts: account];
 #ifdef TARGET_PANTHER				
                 [account synchronizeMailboxListAfterImport];
-#endif
-#ifdef TARGET_TIGER || TARGET_LEOPARD
+#else
 				[account _synchronizeMailboxListWithFileSystem];
 #endif
             }
