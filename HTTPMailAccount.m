@@ -15,7 +15,7 @@
 #import <SystemConfiguration/SystemConfiguration.h>
 #import "mail-app.h"
 #import "HTTPMailConnection.h"
-#import "httpmailBundle.h"
+#import "DPHTTPMailBundle.h"
 #import "DPProxy.h"
 #import "HTTPMailAccountDetails.h"
 #import <ExceptionHandling/NSExceptionHandler.h>
@@ -116,7 +116,7 @@ DPhttpmailCache* httpmailCache = nil;
         
         NSString* password;
 
-        [self setUserAgent: [httpmailBundle userAgent]];
+        [self setUserAgent: [DPHTTPMailBundle userAgent]];
         [self setProviderURL: [account providerURL]];
 
         [self setUsername: [account username]];
@@ -175,7 +175,7 @@ DPhttpmailCache* httpmailCache = nil;
         [account setAccountInfo: dict];
         
 #ifndef TARGET_JARGUAR        
-        [self setSocketTimeout: [httpmailBundle socketTimeout]];
+        [self setSocketTimeout: [DPHTTPMailBundle socketTimeout]];
 #endif
     }
     
@@ -594,7 +594,7 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
     MFError* error;
     
     if(exception) {
-		if([httpmailBundle detailedErrorReports]) {
+		if([DPHTTPMailBundle detailedErrorReports]) {
 			message = exceptionDescription(object, message, exception);
 			error = [MFError errorWithDomain: @"HTTPMailErrors" code: 1 localizedDescription: message title: title helpTag: nil userInfo: nil];
 		} else {
@@ -614,7 +614,7 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
 #endif
 
 	if(object && [object isKindOfClass: [HTTPMailAccount class]]) {
-		if([httpmailBundle createFailureMessages]) {
+		if([DPHTTPMailBundle createFailureMessages]) {
 			NSMutableData* body = [NSMutableData data];
 			NSString* html = [NSString stringWithFormat: @"<code><pre>%@</pre></code>", message];
 			[body appendBytes: [html UTF8String] length: [html length]];
@@ -957,7 +957,7 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
         host = [[NSURL URLWithString: [self providerURL]] host];
     }
 
-    if(![httpmailBundle ignoreNetworkState]) {
+    if(![DPHTTPMailBundle ignoreNetworkState]) {
         NetworkController* nc = [NetworkController sharedInstance];
         if(![nc isNetworkUp] || ![nc isHostReachable: host]) {
 //            NSLog(@"can't get to httpmail server so we won't bother trying");
@@ -974,12 +974,12 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
     }
     
 #ifndef TARGET_JAGUAR
-    BOOL putFoldersUnderInbox = [httpmailBundle foldersUnderInbox];
+    BOOL putFoldersUnderInbox = [DPHTTPMailBundle foldersUnderInbox];
 #endif
 
 #ifdef DESCEND_FROM_IMAP_ACCOUNT
     [monitor setStatusMessage: LocalizedString(@"Waiting to connect", @"")];
-    while(![httpmailBundle waitForLock] && !QuittingTime) {
+    while(![DPHTTPMailBundle waitForLock] && !QuittingTime) {
         // wait for the lock
     }
     
@@ -1115,7 +1115,7 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
             [self downloadFromFolder: @"inbox" intoStore: store using: mail excludeUids: downloadedUIDs];            
 //NSLog(@"here 20");
 
-            if([httpmailBundle downloadSentItems]) {
+            if([DPHTTPMailBundle downloadSentItems]) {
                 MailboxUid* sentMessagesUid = [self sentMessagesMailboxUidCreateIfNeeded: YES];
                 store = [MessageStore currentlyAvailableStoreForUid: sentMessagesUid];
                 [monitor setStatusMessage: LocalizedString(@"Downloading data for Sent Items...", @"")];
@@ -1212,7 +1212,7 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
     [connections removeObject: mail];
 	
 #ifdef DESCEND_FROM_IMAP_ACCOUNT
-    [httpmailBundle unlock];
+    [DPHTTPMailBundle unlock];
 #endif
 	[monitor markCompleted: YES];
     // tell the rest of the system we are finished now
@@ -1237,7 +1237,7 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
     MailboxUid* result = m->method_imp(self, @selector(primaryMailboxUid));
 #else
 	MailboxUid* result = [super primaryMailboxUid];
-	if([httpmailBundle foldersUnderInbox]) {
+	if([DPHTTPMailBundle foldersUnderInbox]) {
 		[result setAttributes: 4];
 	} else {
 		[result setAttributes: 1];
@@ -1576,7 +1576,7 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
 }
 
 - (void) addFailureMessage:(NSString*)subject withBody:(NSData*) body intoMessageStore: (MessageStore*)store {
-	NSString* text = [NSString stringWithFormat: @"From: httpmail plugin<danielparnell@hotmail.com>\nSubject: %@\nContent-Type: text/html\n\n<font color=\"red\">This is an automatically generated failure message created by the HTTPMail Plugin</font><p>Plugin Version: %@</p>", subject, [httpmailBundle bundleVersionString]];
+	NSString* text = [NSString stringWithFormat: @"From: httpmail plugin<danielparnell@hotmail.com>\nSubject: %@\nContent-Type: text/html\n\n<font color=\"red\">This is an automatically generated failure message created by the HTTPMail Plugin</font><p>Plugin Version: %@</p>", subject, [DPHTTPMailBundle bundleVersionString]];
 	NSMutableData* messageData = [NSMutableData data];
 	const char* data = [text cStringUsingEncoding: NSUTF8StringEncoding];
 	

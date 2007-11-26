@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		653142A90CFAD64600A0CABD /* httpmail class diagram.xcclassmodel in Resources */ = {isa = PBXBuildFile; fileRef = 653142A80CFAD64600A0CABD /* httpmail class diagram.xcclassmodel */; };
 		6547D563070794140090F5E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		6547D564070794140090F5E2 /* HTTPMailAccountDetails.nib in Resources */ = {isa = PBXBuildFile; fileRef = 651582BA03EC731300A80046 /* HTTPMailAccountDetails.nib */; };
 		6547D565070794140090F5E2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65607AFF03F2086900A80046 /* Localizable.strings */; };
@@ -14,7 +15,7 @@
 		6547D567070794140090F5E2 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 65008634054DC3230010B915 /* icon.icns */; };
 		6547D568070794140090F5E2 /* DPHTTPMailPreferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = 65A21A0805E408CF00A21107 /* DPHTTPMailPreferences.nib */; };
 		6547D569070794140090F5E2 /* httpmail.png in Resources */ = {isa = PBXBuildFile; fileRef = 654CD7C806C705E400241101 /* httpmail.png */; };
-		6547D56B070794140090F5E2 /* httpmailBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = F556CB96033BE7E301140587 /* httpmailBundle.m */; };
+		6547D56B070794140090F5E2 /* DPHTTPMailBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = F556CB96033BE7E301140587 /* DPHTTPMailBundle.m */; };
 		6547D56C070794140090F5E2 /* HTTPMailAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = F5083861033C188701140587 /* HTTPMailAccount.m */; };
 		6547D56D070794140090F5E2 /* DPhttpmail.m in Sources */ = {isa = PBXBuildFile; fileRef = F508387E033FBD9701140587 /* DPhttpmail.m */; };
 		6547D570070794140090F5E2 /* DPMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = F50838C70341DAF101140587 /* DPMD5.m */; };
@@ -160,7 +161,7 @@
 		654CD5A506C605A500241101 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 		654CD5AA06C605A500241101 /* DPProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 65F9206D03FA213100A80046 /* DPProxy.h */; };
 		654CD5AB06C605A500241101 /* mail-api.h in Headers */ = {isa = PBXBuildFile; fileRef = F556CB88033BE64C01140587 /* mail-api.h */; };
-		654CD5AC06C605A500241101 /* httpmailBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = F556CB95033BE7E301140587 /* httpmailBundle.h */; };
+		654CD5AC06C605A500241101 /* DPHTTPMailBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = F556CB95033BE7E301140587 /* DPHTTPMailBundle.h */; };
 		654CD5AD06C605A500241101 /* mail-app.h in Headers */ = {isa = PBXBuildFile; fileRef = F556CB99033BF53801140587 /* mail-app.h */; };
 		654CD5AE06C605A500241101 /* HTTPMailAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = F5083860033C188701140587 /* HTTPMailAccount.h */; };
 		654CD5AF06C605A500241101 /* httpmail_constants.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C222D50347A7D201140587 /* httpmail_constants.h */; };
@@ -194,7 +195,7 @@
 		654CD5CE06C605A500241101 /* atos in Resources */ = {isa = PBXBuildFile; fileRef = 653430E905AB593700E6644E /* atos */; };
 		654CD5CF06C605A500241101 /* DPHTTPMailPreferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = 65A21A0805E408CF00A21107 /* DPHTTPMailPreferences.nib */; };
 		654CD5D106C605A500241101 /* DPProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F9206E03FA213100A80046 /* DPProxy.m */; };
-		654CD5D206C605A500241101 /* httpmailBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = F556CB96033BE7E301140587 /* httpmailBundle.m */; };
+		654CD5D206C605A500241101 /* DPHTTPMailBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = F556CB96033BE7E301140587 /* DPHTTPMailBundle.m */; };
 		654CD5D306C605A500241101 /* HTTPMailAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = F5083861033C188701140587 /* HTTPMailAccount.m */; };
 		654CD5D406C605A500241101 /* DPhttpmail.m in Sources */ = {isa = PBXBuildFile; fileRef = F508387E033FBD9701140587 /* DPhttpmail.m */; };
 		654CD5D506C605A500241101 /* DPhttp.m in Sources */ = {isa = PBXBuildFile; fileRef = F508388B034018DD01140587 /* DPhttp.m */; };
@@ -221,7 +222,7 @@
 		654CD5ED06C605A500241101 /* ExceptionHandling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6597D47105A3670C0061F607 /* ExceptionHandling.framework */; };
 		654CD5F406C605A500241101 /* DPProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 65F9206D03FA213100A80046 /* DPProxy.h */; };
 		654CD5F506C605A500241101 /* mail-api.h in Headers */ = {isa = PBXBuildFile; fileRef = F556CB88033BE64C01140587 /* mail-api.h */; };
-		654CD5F606C605A500241101 /* httpmailBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = F556CB95033BE7E301140587 /* httpmailBundle.h */; };
+		654CD5F606C605A500241101 /* DPHTTPMailBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = F556CB95033BE7E301140587 /* DPHTTPMailBundle.h */; };
 		654CD5F706C605A500241101 /* mail-app.h in Headers */ = {isa = PBXBuildFile; fileRef = F556CB99033BF53801140587 /* mail-app.h */; };
 		654CD5F806C605A500241101 /* HTTPMailAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = F5083860033C188701140587 /* HTTPMailAccount.h */; };
 		654CD5F906C605A500241101 /* httpmail_constants.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C222D50347A7D201140587 /* httpmail_constants.h */; };
@@ -257,7 +258,7 @@
 		654CD61806C605A500241101 /* atos in Resources */ = {isa = PBXBuildFile; fileRef = 653430E905AB593700E6644E /* atos */; };
 		654CD61906C605A500241101 /* DPHTTPMailPreferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = 65A21A0805E408CF00A21107 /* DPHTTPMailPreferences.nib */; };
 		654CD61B06C605A500241101 /* DPProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F9206E03FA213100A80046 /* DPProxy.m */; };
-		654CD61C06C605A500241101 /* httpmailBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = F556CB96033BE7E301140587 /* httpmailBundle.m */; };
+		654CD61C06C605A500241101 /* DPHTTPMailBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = F556CB96033BE7E301140587 /* DPHTTPMailBundle.m */; };
 		654CD61D06C605A500241101 /* HTTPMailAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = F5083861033C188701140587 /* HTTPMailAccount.m */; };
 		654CD61E06C605A500241101 /* DPhttpmail.m in Sources */ = {isa = PBXBuildFile; fileRef = F508387E033FBD9701140587 /* DPhttpmail.m */; };
 		654CD61F06C605A500241101 /* DPhttp.m in Sources */ = {isa = PBXBuildFile; fileRef = F508388B034018DD01140587 /* DPhttp.m */; };
@@ -287,7 +288,7 @@
 		654CD63F06C605A500241101 /* urltest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B5F89F0661928D0061DC8F /* urltest.m */; };
 		654CD64506C605A500241101 /* DPProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 65F9206D03FA213100A80046 /* DPProxy.h */; };
 		654CD64606C605A500241101 /* mail-api.h in Headers */ = {isa = PBXBuildFile; fileRef = F556CB88033BE64C01140587 /* mail-api.h */; };
-		654CD64706C605A500241101 /* httpmailBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = F556CB95033BE7E301140587 /* httpmailBundle.h */; };
+		654CD64706C605A500241101 /* DPHTTPMailBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = F556CB95033BE7E301140587 /* DPHTTPMailBundle.h */; };
 		654CD64806C605A500241101 /* mail-app.h in Headers */ = {isa = PBXBuildFile; fileRef = F556CB99033BF53801140587 /* mail-app.h */; };
 		654CD64906C605A500241101 /* HTTPMailAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = F5083860033C188701140587 /* HTTPMailAccount.h */; };
 		654CD64A06C605A500241101 /* httpmail_constants.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C222D50347A7D201140587 /* httpmail_constants.h */; };
@@ -323,7 +324,7 @@
 		654CD66906C605A500241101 /* atos in Resources */ = {isa = PBXBuildFile; fileRef = 653430E905AB593700E6644E /* atos */; };
 		654CD66A06C605A500241101 /* DPHTTPMailPreferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = 65A21A0805E408CF00A21107 /* DPHTTPMailPreferences.nib */; };
 		654CD66C06C605A500241101 /* DPProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F9206E03FA213100A80046 /* DPProxy.m */; };
-		654CD66D06C605A500241101 /* httpmailBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = F556CB96033BE7E301140587 /* httpmailBundle.m */; };
+		654CD66D06C605A500241101 /* DPHTTPMailBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = F556CB96033BE7E301140587 /* DPHTTPMailBundle.m */; };
 		654CD66E06C605A500241101 /* HTTPMailAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = F5083861033C188701140587 /* HTTPMailAccount.m */; };
 		654CD66F06C605A500241101 /* DPhttpmail.m in Sources */ = {isa = PBXBuildFile; fileRef = F508387E033FBD9701140587 /* DPhttpmail.m */; };
 		654CD67006C605A500241101 /* DPhttp.m in Sources */ = {isa = PBXBuildFile; fileRef = F508388B034018DD01140587 /* DPhttp.m */; };
@@ -382,7 +383,7 @@
 		6593A6BB0CD6BF5900B6A595 /* DPHTTPMailPreferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = 65A21A0805E408CF00A21107 /* DPHTTPMailPreferences.nib */; };
 		6593A6BC0CD6BF5900B6A595 /* httpmail.png in Resources */ = {isa = PBXBuildFile; fileRef = 654CD7C806C705E400241101 /* httpmail.png */; };
 		6593A6BD0CD6BF5900B6A595 /* HTTPMailDebugWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = 65E632FC082F06A600CBE57D /* HTTPMailDebugWindow.nib */; };
-		6593A6C00CD6BF5900B6A595 /* httpmailBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = F556CB96033BE7E301140587 /* httpmailBundle.m */; };
+		6593A6C00CD6BF5900B6A595 /* DPHTTPMailBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = F556CB96033BE7E301140587 /* DPHTTPMailBundle.m */; };
 		6593A6C10CD6BF5900B6A595 /* HTTPMailAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = F5083861033C188701140587 /* HTTPMailAccount.m */; };
 		6593A6C20CD6BF5900B6A595 /* DPhttpmail.m in Sources */ = {isa = PBXBuildFile; fileRef = F508387E033FBD9701140587 /* DPhttpmail.m */; };
 		6593A6C30CD6BF5900B6A595 /* DPMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = F50838C70341DAF101140587 /* DPMD5.m */; };
@@ -485,6 +486,7 @@
 		6529A34503FEE84600A80046 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6529A34603FEE84600A80046 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
 		652D60E80422E06C00CB1DEB /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = InstallerResources/English.lproj/InstallerWindow.nib; sourceTree = "<group>"; };
+		653142A80CFAD64600A0CABD /* httpmail class diagram.xcclassmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcclassmodel; path = "httpmail class diagram.xcclassmodel"; sourceTree = "<group>"; };
 		653430E905AB593700E6644E /* atos */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = atos; path = /usr/bin/atos; sourceTree = "<absolute>"; };
 		6547D58A070794140090F5E2 /* httpmail.mailbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = httpmail.mailbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6547D590070795DE0090F5E2 /* mail-api-10.4.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "mail-api-10.4.h"; sourceTree = "<group>"; };
@@ -2090,8 +2092,8 @@
 		F5101B4B03B1114901A80046 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
 		F556CB88033BE64C01140587 /* mail-api.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "mail-api.h"; sourceTree = "<group>"; };
 		F556CB8A033BE66301140587 /* Message.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Message.framework; path = /System/Library/Frameworks/Message.framework; sourceTree = "<absolute>"; };
-		F556CB95033BE7E301140587 /* httpmailBundle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = httpmailBundle.h; sourceTree = "<group>"; };
-		F556CB96033BE7E301140587 /* httpmailBundle.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = httpmailBundle.m; sourceTree = "<group>"; };
+		F556CB95033BE7E301140587 /* DPHTTPMailBundle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DPHTTPMailBundle.h; sourceTree = "<group>"; };
+		F556CB96033BE7E301140587 /* DPHTTPMailBundle.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DPHTTPMailBundle.m; sourceTree = "<group>"; };
 		F556CB99033BF53801140587 /* mail-app.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "mail-app.h"; sourceTree = "<group>"; };
 		F583C45D03A2AA2101A800F0 /* xinetd_pop_main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = xinetd_pop_main.m; sourceTree = "<group>"; };
 		F583C46203A2AFE401A800F0 /* io.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = io.h; sourceTree = "<group>"; };
@@ -2301,6 +2303,7 @@
 				089C167CFE841241C02AAC07 /* Resources */,
 				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
 				19C28FB8FE9D52D311CA2CBB /* Products */,
+				653142A80CFAD64600A0CABD /* httpmail class diagram.xcclassmodel */,
 			);
 			name = httpmail;
 			sourceTree = "<group>";
@@ -2344,8 +2347,8 @@
 		08FB77AFFE84173DC02AAC07 /* Mail plugin code */ = {
 			isa = PBXGroup;
 			children = (
-				F556CB95033BE7E301140587 /* httpmailBundle.h */,
-				F556CB96033BE7E301140587 /* httpmailBundle.m */,
+				F556CB95033BE7E301140587 /* DPHTTPMailBundle.h */,
+				F556CB96033BE7E301140587 /* DPHTTPMailBundle.m */,
 				65FB0F9F046E19ED001405DF /* DPAsyncHttpMailAccount.h */,
 				65FB0FA0046E19ED001405DF /* DPAsyncHttpMailAccount.m */,
 				65690BE804AF9C4600A80002 /* DPAsyncHttpMailAccountDetails.h */,
@@ -4190,7 +4193,7 @@
 			files = (
 				654CD5AA06C605A500241101 /* DPProxy.h in Headers */,
 				654CD5AB06C605A500241101 /* mail-api.h in Headers */,
-				654CD5AC06C605A500241101 /* httpmailBundle.h in Headers */,
+				654CD5AC06C605A500241101 /* DPHTTPMailBundle.h in Headers */,
 				654CD5AD06C605A500241101 /* mail-app.h in Headers */,
 				654CD5AE06C605A500241101 /* HTTPMailAccount.h in Headers */,
 				654CD5AF06C605A500241101 /* httpmail_constants.h in Headers */,
@@ -4226,7 +4229,7 @@
 			files = (
 				654CD5F406C605A500241101 /* DPProxy.h in Headers */,
 				654CD5F506C605A500241101 /* mail-api.h in Headers */,
-				654CD5F606C605A500241101 /* httpmailBundle.h in Headers */,
+				654CD5F606C605A500241101 /* DPHTTPMailBundle.h in Headers */,
 				654CD5F706C605A500241101 /* mail-app.h in Headers */,
 				654CD5F806C605A500241101 /* HTTPMailAccount.h in Headers */,
 				654CD5F906C605A500241101 /* httpmail_constants.h in Headers */,
@@ -4271,7 +4274,7 @@
 			files = (
 				654CD64506C605A500241101 /* DPProxy.h in Headers */,
 				654CD64606C605A500241101 /* mail-api.h in Headers */,
-				654CD64706C605A500241101 /* httpmailBundle.h in Headers */,
+				654CD64706C605A500241101 /* DPHTTPMailBundle.h in Headers */,
 				654CD64806C605A500241101 /* mail-app.h in Headers */,
 				654CD64906C605A500241101 /* HTTPMailAccount.h in Headers */,
 				654CD64A06C605A500241101 /* httpmail_constants.h in Headers */,
@@ -4746,6 +4749,7 @@
 				6593A6BC0CD6BF5900B6A595 /* httpmail.png in Resources */,
 				6593A6BD0CD6BF5900B6A595 /* HTTPMailDebugWindow.nib in Resources */,
 				65EAFD3F0CE55F7A00986703 /* donate.html in Resources */,
+				653142A90CFAD64600A0CABD /* httpmail class diagram.xcclassmodel in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4850,7 +4854,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6547D56B070794140090F5E2 /* httpmailBundle.m in Sources */,
+				6547D56B070794140090F5E2 /* DPHTTPMailBundle.m in Sources */,
 				6547D56C070794140090F5E2 /* HTTPMailAccount.m in Sources */,
 				6547D56D070794140090F5E2 /* DPhttpmail.m in Sources */,
 				6547D570070794140090F5E2 /* DPMD5.m in Sources */,
@@ -4984,7 +4988,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				654CD5D106C605A500241101 /* DPProxy.m in Sources */,
-				654CD5D206C605A500241101 /* httpmailBundle.m in Sources */,
+				654CD5D206C605A500241101 /* DPHTTPMailBundle.m in Sources */,
 				654CD5D306C605A500241101 /* HTTPMailAccount.m in Sources */,
 				654CD5D406C605A500241101 /* DPhttpmail.m in Sources */,
 				654CD5D506C605A500241101 /* DPhttp.m in Sources */,
@@ -5011,7 +5015,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				654CD61B06C605A500241101 /* DPProxy.m in Sources */,
-				654CD61C06C605A500241101 /* httpmailBundle.m in Sources */,
+				654CD61C06C605A500241101 /* DPHTTPMailBundle.m in Sources */,
 				654CD61D06C605A500241101 /* HTTPMailAccount.m in Sources */,
 				654CD61E06C605A500241101 /* DPhttpmail.m in Sources */,
 				654CD61F06C605A500241101 /* DPhttp.m in Sources */,
@@ -5048,7 +5052,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				654CD66C06C605A500241101 /* DPProxy.m in Sources */,
-				654CD66D06C605A500241101 /* httpmailBundle.m in Sources */,
+				654CD66D06C605A500241101 /* DPHTTPMailBundle.m in Sources */,
 				654CD66E06C605A500241101 /* HTTPMailAccount.m in Sources */,
 				654CD66F06C605A500241101 /* DPhttpmail.m in Sources */,
 				654CD67006C605A500241101 /* DPhttp.m in Sources */,
@@ -5088,7 +5092,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6593A6C00CD6BF5900B6A595 /* httpmailBundle.m in Sources */,
+				6593A6C00CD6BF5900B6A595 /* DPHTTPMailBundle.m in Sources */,
 				6593A6C10CD6BF5900B6A595 /* HTTPMailAccount.m in Sources */,
 				6593A6C20CD6BF5900B6A595 /* DPhttpmail.m in Sources */,
 				6593A6C30CD6BF5900B6A595 /* DPMD5.m in Sources */,

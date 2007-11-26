@@ -7,7 +7,7 @@
 //
 
 #import "DPHTTPMailPreferences.h"
-#import "httpmailBundle.h"
+#import "DPHTTPMailBundle.h"
 #import "Version.h"
 #import "DPHTTPMailDebugger.h"
 #import "HTTPMailUpdateChecker.h"
@@ -37,67 +37,67 @@
 }
 
 - (void)initializeFromDefaults {
-    if([httpmailBundle foldersUnderInbox]) {
+    if([DPHTTPMailBundle foldersUnderInbox]) {
         [foldersUnderInbox setState: NSOnState];
     } else {
         [foldersUnderInbox setState: NSOffState];
     }
     
-    if([httpmailBundle downloadSentItems]) {
+    if([DPHTTPMailBundle downloadSentItems]) {
         [getSentItems setState: NSOnState];
     } else {
         [getSentItems setState: NSOffState];
     }
     
-    if([httpmailBundle createFailureMessages]) {
+    if([DPHTTPMailBundle createFailureMessages]) {
         [failureMessages setState: NSOnState];
     } else {
         [failureMessages setState: NSOffState];
     }
     
-    if([httpmailBundle ignoreNetworkState]) {
+    if([DPHTTPMailBundle ignoreNetworkState]) {
         [ignoreNetworkState setState: NSOnState];
     } else {
         [ignoreNetworkState setState: NSOffState];
     }
     
-    if([httpmailBundle checkForUpdates]) {
+    if([DPHTTPMailBundle checkForUpdates]) {
         [updates setState: NSOnState];
     } else {
         [updates setState: NSOffState];
     }
     
-	if([httpmailBundle detailedErrorReports]) {
+	if([DPHTTPMailBundle detailedErrorReports]) {
 		[createDetailedErrors setState: NSOnState];
 	} else {
 		[createDetailedErrors setState: NSOffState];
 	}
 	
-    [timeout setIntValue: [httpmailBundle socketTimeout]];
+    [timeout setIntValue: [DPHTTPMailBundle socketTimeout]];
     
-    [userAgent setStringValue: [httpmailBundle userAgent]];
+    [userAgent setStringValue: [DPHTTPMailBundle userAgent]];
 }
 
 - (void)saveChanges {
-    [httpmailBundle setFoldersUnderInbox: [foldersUnderInbox state]==NSOnState];
-    [httpmailBundle setDownloadSentItems: [getSentItems state]==NSOnState];
-    [httpmailBundle setSocketTimeout: [timeout intValue]];
-    [httpmailBundle setCreateFailureMessages: [failureMessages state]==NSOnState];
-    [httpmailBundle setIgnoreNetworkState: [ignoreNetworkState state]==NSOnState];
-    [httpmailBundle setUserAgent: [userAgent stringValue]];
-    [httpmailBundle setCheckForUpdates: [updates state]==NSOnState];
-	[httpmailBundle setDetailedErrorReports: [createDetailedErrors state]==NSOnState];
+    [DPHTTPMailBundle setFoldersUnderInbox: [foldersUnderInbox state]==NSOnState];
+    [DPHTTPMailBundle setDownloadSentItems: [getSentItems state]==NSOnState];
+    [DPHTTPMailBundle setSocketTimeout: [timeout intValue]];
+    [DPHTTPMailBundle setCreateFailureMessages: [failureMessages state]==NSOnState];
+    [DPHTTPMailBundle setIgnoreNetworkState: [ignoreNetworkState state]==NSOnState];
+    [DPHTTPMailBundle setUserAgent: [userAgent stringValue]];
+    [DPHTTPMailBundle setCheckForUpdates: [updates state]==NSOnState];
+	[DPHTTPMailBundle setDetailedErrorReports: [createDetailedErrors state]==NSOnState];
 }
 
 - (char)hasChangesPending {
-    return ([httpmailBundle foldersUnderInbox]!=([foldersUnderInbox state]==NSOnState)) |
-           ([httpmailBundle downloadSentItems]!=([getSentItems state]==NSOnState)) |
-           ([httpmailBundle socketTimeout]!=[timeout intValue]) |
-           ([httpmailBundle createFailureMessages]!=([failureMessages state]==NSOnState)) |
-           ([httpmailBundle ignoreNetworkState]!=([ignoreNetworkState state]==NSOnState)) |
-           (![[httpmailBundle userAgent] isEqualToString: [userAgent stringValue]] |
-           ([httpmailBundle checkForUpdates]!=([updates state]==NSOnState)) |
-		   ([httpmailBundle detailedErrorReports]!=([createDetailedErrors state]==NSOnState))
+    return ([DPHTTPMailBundle foldersUnderInbox]!=([foldersUnderInbox state]==NSOnState)) |
+           ([DPHTTPMailBundle downloadSentItems]!=([getSentItems state]==NSOnState)) |
+           ([DPHTTPMailBundle socketTimeout]!=[timeout intValue]) |
+           ([DPHTTPMailBundle createFailureMessages]!=([failureMessages state]==NSOnState)) |
+           ([DPHTTPMailBundle ignoreNetworkState]!=([ignoreNetworkState state]==NSOnState)) |
+           (![[DPHTTPMailBundle userAgent] isEqualToString: [userAgent stringValue]] |
+           ([DPHTTPMailBundle checkForUpdates]!=([updates state]==NSOnState)) |
+		   ([DPHTTPMailBundle detailedErrorReports]!=([createDetailedErrors state]==NSOnState))
            )
            ;
 }

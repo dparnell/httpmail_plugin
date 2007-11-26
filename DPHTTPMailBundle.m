@@ -6,7 +6,7 @@
 //  Copyright (c) 2002 Daniel Parnell. All rights reserved.
 //
 
-#import "httpmailBundle.h"
+#import "DPHTTPMailBundle.h"
 #import "HTTPMailAccount.h"
 #import "DPAsyncHttpMailAccount.h"
 #import "HTTPMailDeliveryAccount.h"
@@ -87,7 +87,7 @@ static UInt32 getOSVersion() {
 	return result;
 }
 
-@implementation httpmailBundle
+@implementation DPHTTPMailBundle
 
 #ifdef BUNDLE_LOCK
 static NSLock* lock = nil;
@@ -289,14 +289,14 @@ static NSString* httpmailPrefs = @"~/Library/Preferences/person.djlp.mail.plist"
 #endif    
     [dict setObject: [NSNumber numberWithBool: downloadSentItems] forKey: DOWNLOAD_SENT_ITEMS];
     [dict setObject: [NSNumber numberWithBool: foldersUnderInbox] forKey: FOLDERS_UNDER_INBOX];
-    [dict setObject: [NSNumber numberWithInt: [httpmailBundle socketTimeout]] forKey: TIMEOUT];
-    [dict setObject: [NSNumber numberWithBool: [httpmailBundle createFailureMessages]] forKey: GENERATE_FAILURE_MESSAGES];
-    [dict setObject: [NSNumber numberWithBool: [httpmailBundle ignoreNetworkState]] forKey: IGNORE_NETWORK_STATE];
-    [dict setObject: [NSNumber numberWithBool: [httpmailBundle checkForUpdates]] forKey: CHECK_FOR_UPDATES];
-    [dict setObject: [NSNumber numberWithBool: [httpmailBundle detailedErrorReports]] forKey: DETAILED_ERRORS];
+    [dict setObject: [NSNumber numberWithInt: [DPHTTPMailBundle socketTimeout]] forKey: TIMEOUT];
+    [dict setObject: [NSNumber numberWithBool: [DPHTTPMailBundle createFailureMessages]] forKey: GENERATE_FAILURE_MESSAGES];
+    [dict setObject: [NSNumber numberWithBool: [DPHTTPMailBundle ignoreNetworkState]] forKey: IGNORE_NETWORK_STATE];
+    [dict setObject: [NSNumber numberWithBool: [DPHTTPMailBundle checkForUpdates]] forKey: CHECK_FOR_UPDATES];
+    [dict setObject: [NSNumber numberWithBool: [DPHTTPMailBundle detailedErrorReports]] forKey: DETAILED_ERRORS];
 	
-    if([httpmailBundle userAgent]) {
-        [dict setObject: [httpmailBundle userAgent] forKey: USER_AGENT];
+    if([DPHTTPMailBundle userAgent]) {
+        [dict setObject: [DPHTTPMailBundle userAgent] forKey: USER_AGENT];
     } else {
         [dict removeObjectForKey: USER_AGENT];
     }
@@ -327,24 +327,24 @@ static NSString* httpmailPrefs = @"~/Library/Preferences/person.djlp.mail.plist"
             httpmailAccounts = [preferences objectForKey: ACCOUNTS];
             downloadSentItems = [[preferences objectForKey: DOWNLOAD_SENT_ITEMS] intValue];
             foldersUnderInbox = [[preferences objectForKey: FOLDERS_UNDER_INBOX] intValue];
-            [httpmailBundle setCreateFailureMessages: [[preferences objectForKey: GENERATE_FAILURE_MESSAGES] intValue]];
-            [httpmailBundle setIgnoreNetworkState: [[preferences objectForKey: IGNORE_NETWORK_STATE] intValue]];
-            [httpmailBundle setUserAgent: [preferences objectForKey: USER_AGENT]];
+            [DPHTTPMailBundle setCreateFailureMessages: [[preferences objectForKey: GENERATE_FAILURE_MESSAGES] intValue]];
+            [DPHTTPMailBundle setIgnoreNetworkState: [[preferences objectForKey: IGNORE_NETWORK_STATE] intValue]];
+            [DPHTTPMailBundle setUserAgent: [preferences objectForKey: USER_AGENT]];
             
             if([preferences objectForKey: CHECK_FOR_UPDATES]) {
-                [httpmailBundle setCheckForUpdates: [[preferences objectForKey: CHECK_FOR_UPDATES] intValue]];
+                [DPHTTPMailBundle setCheckForUpdates: [[preferences objectForKey: CHECK_FOR_UPDATES] intValue]];
             }
             
             if([preferences valueForKey: TIMEOUT]) {
-                [httpmailBundle setSocketTimeout: [[preferences objectForKey: TIMEOUT] intValue]];
+                [DPHTTPMailBundle setSocketTimeout: [[preferences objectForKey: TIMEOUT] intValue]];
             }
 			
 			if([preferences objectForKey: DETAILED_ERRORS]) {
-				[httpmailBundle setDetailedErrorReports: [[preferences objectForKey: DETAILED_ERRORS] intValue]];
+				[DPHTTPMailBundle setDetailedErrorReports: [[preferences objectForKey: DETAILED_ERRORS] intValue]];
 			}
         }
     
-        if([httpmailBundle checkForUpdates]) {
+        if([DPHTTPMailBundle checkForUpdates]) {
             [HTTPMailUpdateChecker checkForUpdates: NO];
         }
         

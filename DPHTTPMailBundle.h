@@ -17,7 +17,7 @@
 #define BUNDLE_LOCK
 #endif
 
-@interface httpmailBundle : MVMailBundle {
+@interface DPHTTPMailBundle : MVMailBundle {
 }
 
 + (NSString*) bundleVersionString;
