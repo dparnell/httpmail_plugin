@@ -19,11 +19,11 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0 (1.50 Leopard)</string>
+	<string>1.0 (1.51 Leopard)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.1</string>
+	<string>1.51</string>
 	<key>MailbundleVersion</key>
 	<string>3</string>
 	<key>NSPrincipalClass</key>

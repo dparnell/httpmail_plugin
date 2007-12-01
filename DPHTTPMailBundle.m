@@ -1,5 +1,5 @@
 //
-//  httpmailBundle.m
+//  DPHTTPMailBundle.m
 //  httpmail
 //
 //  Created by Daniel Parnell on Sat Sep 21 2002.
@@ -358,14 +358,27 @@ static NSString* httpmailPrefs = @"~/Library/Preferences/person.djlp.mail.plist"
             MailAccount* account;
             NSString* type = [dict objectForKey: @"AccountType"];
             
+			NSString* accountName = [dict objectForKey: @"AccountName"];
+			if(accountName==nil) {
+				accountName = [[dict objectForKey: @"EmailAddresses"] objectAtIndex: 0];
+				if(accountName==nil) {
+					accountName = @"HTTPMail Account";
+				}
+				
+				NSMutableDictionary* dictCopy = [dict mutableCopy];
+				[dictCopy setObject: accountName forKey: @"AccountName"];
+				
+				dict = dictCopy;
+			}
+			 
             if([type isEqualToString: @"HTTPMailAccount"]) {
 				NSEnumerator* ee = [existingAccounts objectEnumerator];
 				MailAccount* existingAccount;
 				BOOL found = NO;
 				
 				while(existingAccount = [ee nextObject]) {
-					if([[existingAccount displayName] isEqualToString: [dict objectForKey: @"AccountName"]]) {
-						NSLog(@"Account '%@' already loaded", [dict objectForKey: @"AccountName"]);
+					if([[existingAccount displayName] isEqualToString: accountName]) {
+						NSLog(@"Account '%@' already loaded", accountName);
 						found = YES;
 						break;
 					}
@@ -374,7 +387,7 @@ static NSString* httpmailPrefs = @"~/Library/Preferences/person.djlp.mail.plist"
 				if(found) {
 					account = nil;
 				} else {
-					NSLog(@"Recreating account '%@'", [dict objectForKey: @"AccountName"]);
+					NSLog(@"Recreating account '%@'", accountName);
 					account = [HTTPMailAccount createAccountWithDictionary: dict];
 				}
             }/* else 

@@ -1,5 +1,5 @@
 //
-//  httpmailBundle.h
+//  DPHTTPMailBundle.h
 //  httpmail
 //
 //  Created by Daniel Parnell on Sat Sep 21 2002.
