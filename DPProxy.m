@@ -35,7 +35,7 @@
 
 - (void)forwardInvocation:(NSInvocation *)anInvocation
 {
-    NSLog(@"%@", anInvocation);
+    NSLog(@"%@ %p - %@", [target class], target, NSStringFromSelector([anInvocation selector]));
     
     [anInvocation setTarget: target];
     [anInvocation invoke];

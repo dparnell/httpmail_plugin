@@ -237,7 +237,7 @@ DPhttpmailCache* httpmailCache = nil;
     return self;
 }
 
-#ifdef TARGET_PANTHER
+#ifdef DESCEND_FROM_IMAP_ACCOUNT
 - (id) initWithPath:(NSString*)aPath {
 //    NSLog(@"%@ initWithPath: %@", self,  aPath);
 
@@ -371,8 +371,7 @@ DPhttpmailCache* httpmailCache = nil;
 - (id)storeForMailboxUid:(MailboxUid*)uid {
 	id result = [super storeForMailboxUid: uid];
 	NSLog(@"storeForMailboxUid: %@ = %@", uid, result);
-	return result;
-//	return [[LibraryStore alloc] initWithMailboxUid: uid readOnly: NO];
+	return [DPProxy newWithTarget: result];
 }
 */
 
@@ -826,6 +825,7 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
         
 		LibraryMessage* msg = [self addMessage: messageData toStore: store withFlags: flags];
 		[msg setRemoteID: uid];
+		
 		[msg commit];
 //NSLog(@"here U");
 #else		
@@ -1294,10 +1294,8 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
 }
 
 - (void)deleteMessagesFromMailboxUid:(MailboxUid*)mailbox olderThanNumberOfDays:(unsigned int)olderthan compact:(BOOL)shouldCompat {
-#ifdef TARGET_PANTHER
-    if(![httpmailBundle bundleFinishedInitialization])
+    if(![DPHTTPMailBundle bundleFinishedInitialization])
         return;
-#endif
 
     MailboxUid* trash = [self trashMailboxUidCreateIfNeeded: YES];
     

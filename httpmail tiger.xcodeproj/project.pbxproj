@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		651DE82B0D0B8E9B0022DD3A /* DPProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F9206E03FA213100A80046 /* DPProxy.m */; };
 		653142A90CFAD64600A0CABD /* httpmail class diagram.xcclassmodel in Resources */ = {isa = PBXBuildFile; fileRef = 653142A80CFAD64600A0CABD /* httpmail class diagram.xcclassmodel */; };
 		6547D563070794140090F5E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		6547D564070794140090F5E2 /* HTTPMailAccountDetails.nib in Resources */ = {isa = PBXBuildFile; fileRef = 651582BA03EC731300A80046 /* HTTPMailAccountDetails.nib */; };
@@ -5114,6 +5115,7 @@
 				6593A6D30CD6BF5900B6A595 /* DPAsyncHttpHelper.m in Sources */,
 				6593A6D40CD6BF5900B6A595 /* DPhttp.m in Sources */,
 				6593A6D50CD6BF5900B6A595 /* DPSocket.m in Sources */,
+				651DE82B0D0B8E9B0022DD3A /* DPProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
