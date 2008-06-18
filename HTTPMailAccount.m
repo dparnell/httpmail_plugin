@@ -923,6 +923,10 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
 
 }
 
+- (void)fetchSynchronouslyIsAuto:(NSNumber*)flag {
+	[self fetchSynchronously];
+}
+
 //#define TEST_MESSAGE_CODE
 - (void) fetchSynchronously {    
 	monitor = [ActivityMonitor currentMonitor];

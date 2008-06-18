@@ -492,31 +492,31 @@
 		6547D58A070794140090F5E2 /* httpmail.mailbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = httpmail.mailbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6547D590070795DE0090F5E2 /* mail-api-10.4.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "mail-api-10.4.h"; sourceTree = "<group>"; };
 		6547D591070795DE0090F5E2 /* mail-app-10.4.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "mail-app-10.4.h"; sourceTree = "<group>"; };
-		654912A3085004D0004BF616 /* Info-httpmail_10.4.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = "Info-httpmail_10.4.plist"; sourceTree = "<group>"; };
+		654912A3085004D0004BF616 /* Info-httpmail_10.4.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "Info-httpmail_10.4.plist"; sourceTree = "<group>"; };
 		654913290852F6AC004BF616 /* DPAsyncHttpHelper.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DPAsyncHttpHelper.h; sourceTree = "<group>"; };
 		6549132A0852F6AC004BF616 /* DPAsyncHttpHelper.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DPAsyncHttpHelper.m; sourceTree = "<group>"; };
 		654C1C29047BA73D00A8002C /* asyncTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = asyncTestMain.m; sourceTree = "<group>"; };
 		654C1C2B047BA7E500A8002C /* AsyncTest.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = AsyncTest.nib; sourceTree = "<group>"; };
 		654C1C31047BA8F200A8002C /* AsyncTester.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AsyncTester.h; sourceTree = "<group>"; };
 		654C1C32047BA8F200A8002C /* AsyncTester.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AsyncTester.m; sourceTree = "<group>"; };
-		654CD4B006C605A400241101 /* Info-httpmail__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-httpmail__Upgraded_.plist"; sourceTree = "<group>"; };
+		654CD4B006C605A400241101 /* Info-httpmail__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-httpmail__Upgraded_.plist"; sourceTree = "<group>"; };
 		654CD4C606C605A500241101 /* transport */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = transport; sourceTree = BUILT_PRODUCTS_DIR; };
 		654CD4E106C605A500241101 /* POP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = POP; sourceTree = BUILT_PRODUCTS_DIR; };
 		654CD50006C605A500241101 /* httpPOP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = httpPOP; sourceTree = BUILT_PRODUCTS_DIR; };
 		654CD50D06C605A500241101 /* ICTester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ICTester; sourceTree = BUILT_PRODUCTS_DIR; };
-		654CD51B06C605A500241101 /* Info-Installer__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-Installer__Upgraded_.plist"; sourceTree = "<group>"; };
+		654CD51B06C605A500241101 /* Info-Installer__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Installer__Upgraded_.plist"; sourceTree = "<group>"; };
 		654CD51C06C605A500241101 /* Installer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Installer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		654CD53406C605A500241101 /* netsockethttp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = netsockethttp; sourceTree = BUILT_PRODUCTS_DIR; };
-		654CD55306C605A500241101 /* Info-AsyncHttpMailTester__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-AsyncHttpMailTester__Upgraded_.plist"; sourceTree = "<group>"; };
+		654CD55306C605A500241101 /* Info-AsyncHttpMailTester__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-AsyncHttpMailTester__Upgraded_.plist"; sourceTree = "<group>"; };
 		654CD55406C605A500241101 /* AsyncHttpMailTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncHttpMailTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		654CD59706C605A500241101 /* Info-httpmail_10_3__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-httpmail_10_3__Upgraded_.plist"; sourceTree = "<group>"; };
+		654CD59706C605A500241101 /* Info-httpmail_10_3__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-httpmail_10_3__Upgraded_.plist"; sourceTree = "<group>"; };
 		654CD5A606C605A500241101 /* Installer Panther.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Installer Panther.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		654CD5EF06C605A500241101 /* Info-httpmail_10_3_debug__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-httpmail_10_3_debug__Upgraded_.plist"; sourceTree = "<group>"; };
+		654CD5EF06C605A500241101 /* Info-httpmail_10_3_debug__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-httpmail_10_3_debug__Upgraded_.plist"; sourceTree = "<group>"; };
 		654CD5F106C605A500241101 /* httpmail_panther.mailbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = httpmail_panther.mailbundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		654CD63906C605A500241101 /* Info-httpmail_10_3_http_debug__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-httpmail_10_3_http_debug__Upgraded_.plist"; sourceTree = "<group>"; };
+		654CD63906C605A500241101 /* Info-httpmail_10_3_http_debug__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-httpmail_10_3_http_debug__Upgraded_.plist"; sourceTree = "<group>"; };
 		654CD63B06C605A500241101 /* httpmail_panther.mailbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = httpmail_panther.mailbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		654CD64106C605A500241101 /* urltest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = urltest; sourceTree = BUILT_PRODUCTS_DIR; };
-		654CD68A06C605A500241101 /* Info-httpmail_apple_http_debug__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-httpmail_apple_http_debug__Upgraded_.plist"; sourceTree = "<group>"; };
+		654CD68A06C605A500241101 /* Info-httpmail_apple_http_debug__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-httpmail_apple_http_debug__Upgraded_.plist"; sourceTree = "<group>"; };
 		654CD68C06C605A500241101 /* httpmail_panther.mailbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = httpmail_panther.mailbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		654CD6A506C605A500241101 /* Transport Tester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Transport Tester"; sourceTree = BUILT_PRODUCTS_DIR; };
 		654CD73906C6FAF500241101 /* DPHTTPMail_Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHTTPMail_Preferences.h; sourceTree = "<group>"; };
@@ -5208,7 +5208,6 @@
 				INFOPLIST_FILE = "Info-httpmail_10.5.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				LIBRARY_STYLE = BUNDLE;
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-flat_namespace",
@@ -5341,7 +5340,6 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				LIBRARY_STYLE = BUNDLE;
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "-lcrypto";
 				OTHER_REZFLAGS = "";
@@ -5432,7 +5430,6 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				LIBRARY_STYLE = BUNDLE;
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "-lcrypto";
 				OTHER_REZFLAGS = "";
@@ -5523,7 +5520,6 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				LIBRARY_STYLE = BUNDLE;
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "-lcrypto";
 				OTHER_REZFLAGS = "";
@@ -5617,7 +5613,6 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				LIBRARY_STYLE = BUNDLE;
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -5709,7 +5704,6 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "Info-Installer__Upgraded_.plist";
 				LIBRARY_STYLE = BUNDLE;
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -5810,7 +5804,6 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				LIBRARY_STYLE = BUNDLE;
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "-lcrypto";
 				OTHER_REZFLAGS = "";
@@ -5902,7 +5895,6 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "Info-AsyncHttpMailTester__Upgraded_.plist";
 				LIBRARY_STYLE = BUNDLE;
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-flat_namespace",
@@ -6019,7 +6011,6 @@
 				INFOPLIST_FILE = "Installer Panther-Info.plist";
 				INSTALL_PATH = "$(USER_APPS_DIR)";
 				LIBRARY_STYLE = BUNDLE;
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -6140,7 +6131,6 @@
 				INFOPLIST_FILE = "Info-httpmail_10_3_debug__Upgraded_.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				LIBRARY_STYLE = BUNDLE;
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-flat_namespace",
@@ -6289,7 +6279,6 @@
 				INFOPLIST_FILE = "Info-httpmail_10_3_http_debug__Upgraded_.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				LIBRARY_STYLE = BUNDLE;
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-flat_namespace",
@@ -6437,7 +6426,6 @@
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				INSTALL_PATH = /usr/local/bin;
 				LIBRARY_STYLE = BUNDLE;
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -6553,7 +6541,6 @@
 				INFOPLIST_FILE = "Info-httpmail_apple_http_debug__Upgraded_.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				LIBRARY_STYLE = BUNDLE;
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-flat_namespace",
@@ -6694,7 +6681,6 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = USE_APPLE_HTTP;
 				LIBRARY_STYLE = BUNDLE;
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PREBINDING = NO;
@@ -6790,7 +6776,6 @@
 				INFOPLIST_FILE = "Info-httpmail_10.4.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				LIBRARY_STYLE = BUNDLE;
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-flat_namespace",
