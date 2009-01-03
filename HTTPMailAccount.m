@@ -330,7 +330,8 @@ DPhttpmailCache* httpmailCache = nil;
                     NSString* folderName = [file stringByDeletingPathExtension];
 
 #ifdef TARGET_LEOPARD
-					NSString* folderUrl = [[[self rootMailboxUid] URLString] stringByAppendingString: [folderName stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
+					folderName = [folderName stringByReplacingOccurrencesOfString: @" " withString: @"%20"];
+					NSString* folderUrl = [[[self rootMailboxUid] URLString] stringByAppendingString: [folderName stringByReplacingOccurrencesOfString: @"'" withString: @"''"]];
 					MailboxUid* folderUid = [MailAccount mailboxUidForURL: folderUrl forceCreation: YES];
 					
 					if(folderUid==nil) {
@@ -963,7 +964,7 @@ void showAlert(id object, NSException* exception, NSString* title, NSString* mes
 
     if(![DPHTTPMailBundle ignoreNetworkState]) {
         NetworkController* nc = [NetworkController sharedInstance];
-        if(![nc isNetworkUp] || ![nc isHostReachable: host]) {
+        if(![nc isHostReachable: host]) {
 //            NSLog(@"can't get to httpmail server so we won't bother trying");
 
             // tell the rest of the system we are finished now

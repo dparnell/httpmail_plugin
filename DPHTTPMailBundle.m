@@ -345,7 +345,11 @@ static NSString* httpmailPrefs = @"~/Library/Preferences/person.djlp.mail.plist"
         }
     
         if([DPHTTPMailBundle checkForUpdates]) {
-            [HTTPMailUpdateChecker checkForUpdates: NO];
+			NS_DURING
+				[HTTPMailUpdateChecker checkForUpdates: NO];
+			NS_HANDLER
+				// do nothing
+		    NS_ENDHANDLER
         }
         
 #ifndef TARGET_JAGUAR
